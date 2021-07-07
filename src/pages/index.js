@@ -5,6 +5,7 @@ import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "../components/header"
 import Story from "../components/story"
+import Menu from "../components/menu"
 
 
 // const codeStyles = {
@@ -36,7 +37,8 @@ const IndexPage = () => {
   return (
     <div className="pageWrapper">
     <Header toggleMenu={toggleMenu} menuState={menuActive}/>
-    <Story />
+    <Story/>
+    <Menu/>
 
     {/* <h1 className="text-red mx-10" style={codeStyles}>Hi</h1> */}
    

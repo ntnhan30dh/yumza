@@ -22,9 +22,9 @@ module.exports = {
     extend: {
       screens: {},
       colors: {
-        green: "#0b9446",
-        black: "#2a2c2a",
         red: "#d71d24",
+        pink: " #FF8CF0",
+        black: "#2a2c2a",
         yellow: "#ffd962",
         orange: "##E5E5E5",
         skin: "#ffeed8",
