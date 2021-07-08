@@ -39,7 +39,9 @@ const Story = () => {
   `);
 
   const imageData = data.bgBig.childImageSharp.fluid;
-
+const pStyle ={
+  'lineHeight': '20px'
+}
   return (
     <section className="story bg-red" id="story">
       {/* <BackgroundImage
@@ -51,9 +53,9 @@ const Story = () => {
       >
        
       </BackgroundImage> */}
-      <div className=" px-universal w-full">
+      <div className=" px-universal w-full pt-4">
         <Img
-          className="  w-full"
+          className="  w-full mb-4 md:mb-6"
           fluid={data.steamed_fried_loved.childImageSharp.fluid}
         />
       </div>
@@ -62,12 +64,13 @@ const Story = () => {
       </div>
       <div className="bottomDiv ">
         <div className="text">
-          <div className=" px-universal w-full">
+          <div className=" px-universal w-full ">
             <Img
-              className="  w-full"
+              className="  w-full my-8"
               fluid={data.dumplingLove.childImageSharp.fluid}
             />
-            <p>
+            <div className="w-full flex">
+            <p className=" barlow text-white text-xs w-2/3" style={pStyle}>
               Delicate and delicious, these different types of Asian dumplings
               are stuffed to perfection then pan fried. Tantalise your taste
               buds and go creative with your flavours combination. With
@@ -75,30 +78,30 @@ const Story = () => {
               endless - so whether it’s dinner for two or a feast for five, you
               always know there is something for everyone.
             </p>
-          </div>
-        </div>
-        <div className="animationDiv">
-          <div className="dumplingsDiv">
-            <div className=" w-24 md:w-32 lg:w-32 mr-8">
-              <img src={dunmpling1} alt="order now" />
+            <div className="dumplingsDiv w-1/3 ">
+            <div className=" w-16 md:w-32 lg:w-32 mx-auto ">
+              <img src={dunmpling1} alt="dunmpling" />
             </div>{" "}
-            <div className=" w-24 md:w-32 lg:w-32 mr-8">
-              <img src={dunmpling2} alt="order now" />
+            <div className=" w-20 md:w-32 lg:w-32 mx-auto  ">
+              <img src={dunmpling2} alt="dunmpling" />
             </div>{" "}
-            <div className=" w-24 md:w-32 lg:w-32 mr-8">
-              <img src={dunmpling3} alt="order now" />
+            <div className=" w-20 md:w-32 lg:w-32  mx-auto ">
+              <img src={dunmpling3} alt="dunmpling" />
             </div>{" "}
-            <div className=" w-24 md:w-32 lg:w-32 mr-8">
-              <img src={dunmplingDish} alt="order now" />
+            <div className=" w-24 md:w-32 lg:w-32 mx-auto ">
+              <img src={dunmplingDish} alt="dunmpling" />
             </div>
           </div>
-          <div className="yumZaText">
-            <h1 className="text-pink font-bold text-6xl">
+            </div>
+          </div>
+        </div>
+          <div className="yumZaText max-w-max mx-auto transform -rotate-18 pb-16">
+            <h1 className="text-pink font-bold text-14vw leading-100">
               YUM <br /> YUM <br /> YUMZAAAA
             </h1>
           </div>
         </div>
-      </div>
+     
     </section>
   );
 };

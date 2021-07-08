@@ -15,6 +15,7 @@ module.exports = {
     rotate: { 
       '12': "12deg" ,
       '-12': "-12deg" ,
+      '-18': "-18deg" ,
       '25': "25deg" ,
       '30': "30deg" ,
       '45': "45deg" 
@@ -36,7 +37,8 @@ module.exports = {
       },
       height: {
         wFull: "100vw",
-        vh: "85vh",
+        '70vh': "70vh",
+        '30vh': "30vh",
         '32': "34vw",
         '370': "370px",
       },
@@ -64,6 +66,7 @@ module.exports = {
        fontSize: {
         '7.5xl': '5rem',
         '7vw': '7vw',
+        '14vw': '14vw',
        }
     },
     borderWidth: {
