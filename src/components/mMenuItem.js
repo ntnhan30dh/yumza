@@ -14,7 +14,23 @@ const MMenuItem = (props) => {
         }
       }
 
+      MeSoHappyL: file(relativePath: { eq: "MenuPic_MeSoHappy_L.png" }) {
+        childImageSharp {
+          fluid(quality: 100, maxWidth: 700) {
+            ...GatsbyImageSharpFluid_withWebp
+          }
+        }
+      }
+
       RiceAndShine: file(relativePath: { eq: "mMenuPic_RiceAndShine.png" }) {
+        childImageSharp {
+          fluid(quality: 100, maxWidth: 700) {
+            ...GatsbyImageSharpFluid_withWebp
+          }
+        }
+      }
+
+      Shrimpyoza: file(relativePath: { eq: "mMenuPic_Shrimpyoza.png" }) {
         childImageSharp {
           fluid(quality: 100, maxWidth: 700) {
             ...GatsbyImageSharpFluid_withWebp
@@ -36,8 +52,8 @@ const MMenuItem = (props) => {
         return data.Lucky.childImageSharp.fluid
       case "HappyYogi":
         return data.HappyYogi.childImageSharp.fluid
-      case "GoNuts":
-        return data.GoNuts.childImageSharp.fluid
+      case "Shrimpyoza":
+        return data.Shrimpyoza.childImageSharp.fluid
         case "GreenDelight":
           return data.GreenDelight.childImageSharp.fluid
           case "ThaiBurger":
@@ -61,13 +77,16 @@ const MMenuItem = (props) => {
     }
   }
     return (
-        <div className="mMenuItem w-full px-1">
+        <div className="mMenuItem //w-full px-1" >
         <div className={` w-full pic menu-pic border-8 border-solid`}>
-          <Img className="w-full" fluid={pic(props.pic)} />
+          <Img className="w-full picS" fluid={pic(props.pic)} />
+          <Img className="w-full picL hidden " fluid={ data.MeSoHappyL.childImageSharp.fluid} />
         </div>
-        <h1 className="uppercase text-white font-bold tracking-wider text-3xl text-center py-4">{props.name}</h1>
-        <p className="barlow font-bold text-xs text-white text-center">{props.description}</p>
-        <p className="barlow text-white text-center text-xs italic py-2">{props.ingredient}</p>
+        <div className="text">
+        <h1 className="name uppercase text-white font-bold tracking-wider text-3xl text-center py-4">{props.name}</h1>
+        <p className=" description md:hidden barlow font-bold text-xs text-white text-center">{props.description}</p>
+        <p className="ingredient md:hidden barlow text-white text-center text-xs italic py-2">{props.ingredient}</p>
+        </div>
         </div>
 
     )

@@ -93,4 +93,33 @@ textarea {
       border-color: #d71d24;
     }
   }
+
+  @media only screen and (min-width: 768px) {
+    .mainSlide {
+
+      .slick-current{
+      //  width: 20% !important;
+      display: none !important;
+        .pic {
+          border-color: #ffff;
+          .picS{
+            display: none;
+          }
+          .picL{
+            display: block;
+          }
+        }
+  
+        .description{
+          display: block;
+        }
+  
+        .ingredient{
+          display: block;
+        }
+      }
+    }
+  }
+
+ 
 }

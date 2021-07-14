@@ -2,6 +2,7 @@ import React from "react";
 import menu_text from "../images/menu_text.png";
 
 import MMenuStarter from "./mMenu_starter";
+import MMenuDeepFried from "./mMenu_deepFried";
 const Menu = () => {
   return (
     <section id="menu" className=" menuContainer w-full  md:py-12 lg:py-16">
@@ -18,7 +19,7 @@ const Menu = () => {
         </div>
       </div>
       <MMenuStarter bg="bg-red" />
-      <MMenuStarter bg="bg-pink" />
+      <MMenuDeepFried bg="bg-pink" />
      
     </section>
   );
