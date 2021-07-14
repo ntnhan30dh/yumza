@@ -7,7 +7,7 @@ import dunmpling1 from "../images/dumpling1.png";
 import dunmpling2 from "../images/dumpling2.png";
 import dunmpling3 from "../images/dumpling3.png";
 import dunmplingDish from "../images/dumplingDish.png";
-import chopstick1 from "../images/chopsticks1.png";
+import chopstick1 from "../images/chopstick1.png";
 import chopstick2 from "../images/chopstick2.png";
 
 const Story = () => {

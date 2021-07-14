@@ -4,7 +4,7 @@ import menu_text from "../images/menu_text.png";
 import MMenuStarter from "./mMenu_starter";
 const Menu = () => {
   return (
-    <section id="menu" className="w-full  md:py-12 lg:py-16">
+    <section id="menu" className=" menuContainer w-full  md:py-12 lg:py-16">
       <div className="textDiv w-full md:flex bg-pink">
         <div className=" md:w-1/2 py-4 pr-4 ">
           <img src={menu_text} alt="menu" />
@@ -18,6 +18,7 @@ const Menu = () => {
         </div>
       </div>
       <MMenuStarter bg="bg-red" />
+      <MMenuStarter bg="bg-pink" />
      
     </section>
   );

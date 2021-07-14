@@ -61,11 +61,13 @@ const MMenuItem = (props) => {
     }
   }
     return (
-        <div className="mMenuItem w-full">
-        <div className={` w-full menu-pic border-8 border-solid ${props.borderColour}`}>
+        <div className="mMenuItem w-full px-1">
+        <div className={` w-full pic menu-pic border-8 border-solid`}>
           <Img className="w-full" fluid={pic(props.pic)} />
         </div>
         <h1 className="uppercase text-white font-bold tracking-wider text-3xl text-center py-4">{props.name}</h1>
+        <p className="barlow font-bold text-xs text-white text-center">{props.description}</p>
+        <p className="barlow text-white text-center text-xs italic py-2">{props.ingredient}</p>
         </div>
 
     )
