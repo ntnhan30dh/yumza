@@ -5,7 +5,7 @@ import MMenuItem from "./mMenuItem";
 const MMenuStarter = (props) => {
   
   return (
-      <MobileSlick title="Starters and sides" bg={props.bg}>
+      <MobileSlick title="Starters and sides" bg={props.bg} slideNr={4}>
         <MMenuItem
           pic="MeSoHappy"
           name="ME SO HAPPY"

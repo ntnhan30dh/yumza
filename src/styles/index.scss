@@ -96,10 +96,14 @@ textarea {
 
   @media only screen and (min-width: 768px) {
     .mainSlide {
+      .slick-current{  
+     display: none !important;
+      
+      }
+    }
 
-      .slick-current{
-      //  width: 20% !important;
-      display: none !important;
+    .navSlide {
+      .slick-slider{  
         .pic {
           border-color: #ffff;
           .picS{
@@ -109,13 +113,25 @@ textarea {
             display: block;
           }
         }
+      }
+    }
+
+    .textSlide {
+      .slick-slider{  
+        .pic {
+          display: none;
+        }
+
+        .name{
+          display: block;
+        }
   
         .description{
           display: block;
         }
   
         .ingredient{
-          display: block;
+         display: block;
         }
       }
     }
