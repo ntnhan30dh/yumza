@@ -96,12 +96,19 @@ textarea {
 
   @media only screen and (min-width: 768px) {
     .mainSlide {
+    //  margin-left: -20%;
       .slick-current{  
-     display: none !important;
+  display: none !important;
+ 
       
       }
+         .slick-slide{  
+  
+      width: 200px ;
+          
+          }
     }
-
+   
     .navSlide {
       .slick-slider{  
         .pic {
@@ -133,6 +140,48 @@ textarea {
         .ingredient{
          display: block;
         }
+      }
+    }
+
+
+    .layout2Slide {
+      .slick-current{  
+        .pic {
+      border-color: #ffff;
+           }
+
+           .name{
+            opacity: 1 !important;
+           
+
+          }
+    
+          .description{
+            opacity: 1 !important;
+          }
+    
+          .ingredient{
+            opacity: 1 !important;
+          }
+      }
+
+      .slick-slider{  
+           .name{
+            display: block;
+            opacity: 0;
+          }
+    
+          .description{
+            display: block;
+            opacity: 0;
+
+          }
+    
+          .ingredient{
+           display: block;
+           opacity: 0;
+
+          }
       }
     }
   }

@@ -3,6 +3,13 @@ import React, { useRef, useState } from "react";
 import chopstick3 from "../images/chopstick3.png";
 
 const MobileSlick = (props) => {
+
+  const [nav1, setNav1] = useState();
+  const [nav2, setNav2] = useState();
+  const [nav3, setNav3] = useState();
+
+  
+
   //creating the ref
   const customeSlider = useRef();
   const gotoNext = () => {
@@ -20,11 +27,10 @@ const MobileSlick = (props) => {
     infinite: true,
     speed: 1000,
     slidesToShow: slideNr,
-    slidesToScroll: 1,
-    autoplay: false,
-    autoplaySpeed: 3000,
-    // adaptiveHeight:true,
+   
+   // adaptiveHeight:false,
     // variableWidth: true,
+    //initialSlide:13,
     focusOnSelect: true,
     arrows: false,
     responsive: [
@@ -63,17 +69,26 @@ const MobileSlick = (props) => {
     speed: 1000,
     slidesToShow: 1,
     slidesToScroll: 1,
-    autoplay: false,
-    autoplaySpeed: 3000,
+   // initialSlide:1,
     //adaptiveHeight: true,
-    focusOnSelect: false,
+    focusOnSelect: true,
    // fade: true,
     arrows: false,
   };
 
-  const [nav1, setNav1] = useState();
-  const [nav2, setNav2] = useState();
-  const [nav3, setNav3] = useState();
+  const settings3 = {
+    dots: false,
+    infinite: true,
+    speed: 1000,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    //adaptiveHeight: true,
+    focusOnSelect: false,
+    fade: true,
+    arrows: false,
+  };
+ 
+ 
 
   const pic = (title) => {
     switch (title) {
@@ -85,12 +100,12 @@ const MobileSlick = (props) => {
   };
 
   return (
-    <div className={`sliderContainer ${props.bg}`}>
+    <div className={`sliderContainer ${props.bg} `}>
       <div className="title bg-white text-center italic font-bold tracking-wider py-2">
         <h1 className="uppercase text-red">{props.title}</h1>
       </div>
       <div className="slideWrapper md:flex md:px-8 lg:px-20">
-        <div className="navSlide hidden md:block md:w-1/3 mx-auto pt-8">
+    {  props.layout===1&&  <div className="navSlide hidden md:block md:w-1/3 mx-auto pt-8">
           <Slider
             {...settings2}
             asNavFor={nav2}
@@ -99,9 +114,10 @@ const MobileSlick = (props) => {
           >
             {props.children}
           </Slider>
-        </div>
+          
+        </div>}
 
-        <div className="rightSlides md:w-2/3 mx-auto">
+      { props.layout===1&& <div className="rightSlides md:w-2/3 mx-auto overflow-hidden">
           <div className="mainSlide w-3/4 md:w-full mx-auto pt-8 ">
             <Slider
               {...settings}
@@ -111,10 +127,11 @@ const MobileSlick = (props) => {
             >
               {props.children}
             </Slider>
+            
           </div>
           <div className="textSlide hidden md:block w-3/4 md:w-full mx-auto pt-8">
             <Slider
-              {...settings2}
+              {...settings3}
               asNavFor={nav3}
               ref={(slider2) => setNav2(slider2)}
               className={` w-full `}
@@ -125,7 +142,17 @@ const MobileSlick = (props) => {
           <div className=" w-3/4 mx-auto p-3 ">
             <img src={pic(props.title)} alt="chopstick3" />
           </div>
-        </div>
+        </div>}
+        {props.layout===2&&  <div className="layout2Slide w-3/4 md:w-full mx-auto pt-8 ">
+            <Slider
+              {...settings}
+              ref={customeSlider}
+              asNavFor={nav1}
+              className={` w-full`}
+            >
+              {props.children}
+            </Slider>
+          </div>}
       </div>
 
       <button onClick={() => gotoNext()}>

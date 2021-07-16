@@ -18,8 +18,8 @@ const Menu = () => {
           </p>
         </div>
       </div>
-      <MMenuStarter bg="bg-red" />
-      <MMenuDeepFried bg="bg-pink" />
+      <MMenuStarter />
+      <MMenuDeepFried  />
      
     </section>
   );
