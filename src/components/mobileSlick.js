@@ -1,6 +1,7 @@
 import Slider from "react-slick";
 import React, { useRef, useState } from "react";
 import chopstick3 from "../images/chopstick3.png";
+import btn from "../images/btnNext.png";
 
 const MobileSlick = (props) => {
 
@@ -16,9 +17,9 @@ const MobileSlick = (props) => {
     customeSlider.current.slickNext();
   };
 
-  const gotoPrev = () => {
-    customeSlider.current.slickPrev();
-  };
+  // const gotoPrev = () => {
+  //   customeSlider.current.slickPrev();
+  // };
 
   const slideNr = props.slideNr;
 
@@ -31,7 +32,7 @@ const MobileSlick = (props) => {
    // adaptiveHeight:false,
     // variableWidth: true,
     //initialSlide:13,
-    focusOnSelect: true,
+    //focusOnSelect: true,
     arrows: false,
     responsive: [
       {
@@ -101,7 +102,7 @@ const MobileSlick = (props) => {
 
   return (
     <div className={`sliderContainer ${props.bg} `}>
-      <div className="title bg-white text-center italic font-bold tracking-wider py-2">
+      <div className="title bg-white text-center md:text-left md:text-2xl italic font-bold tracking-wider py-2 md:py-4">
         <h1 className="uppercase text-red">{props.title}</h1>
       </div>
       <div className="slideWrapper md:flex md:px-8 lg:px-20">
@@ -129,7 +130,8 @@ const MobileSlick = (props) => {
             </Slider>
             
           </div>
-          <div className="textSlide hidden md:block w-3/4 md:w-full mx-auto pt-8">
+          <div className="md:flex w-full">
+          <div className="textSlide hidden md:block w-3/4 md:w-1/2 mx-auto pt-8">
             <Slider
               {...settings3}
               asNavFor={nav3}
@@ -142,6 +144,13 @@ const MobileSlick = (props) => {
           <div className=" w-3/4 mx-auto p-3 ">
             <img src={pic(props.title)} alt="chopstick3" />
           </div>
+
+      <button onClick={() => gotoNext()} className="hidden md:block">
+      <div className=" w-12 ">
+            <img src={btn} alt="next" />
+          </div>
+      </button>
+          </div>
         </div>}
         {props.layout===2&&  <div className="layout2Slide w-3/4 md:w-full mx-auto pt-8 ">
             <Slider
@@ -152,14 +161,18 @@ const MobileSlick = (props) => {
             >
               {props.children}
             </Slider>
+            <button onClick={() => gotoNext()} className="hidden md:block">
+      <div className=" w-12 ">
+            <img src={btn} alt="next" />
+          </div>
+      </button>
+            <div className=" w-3/4 mx-auto p-3 ">
+            <img src={pic(props.title)} alt="chopstick3" />
+          </div>
+       
           </div>}
       </div>
 
-      <button onClick={() => gotoNext()}>
-        <div>
-          <h1>next</h1>
-        </div>
-      </button>
     </div>
   );
 };

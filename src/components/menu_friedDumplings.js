@@ -1,61 +1,54 @@
 import React from "react";
 import MobileSlick from "./mobileSlick";
-import MMenuItem from "./mMenuItem";
+import MenuItem from "./menuItem";
 
-const MMenuStarter = () => {
+const menuFriedDumplings = () => {
   
   return (
-      <MobileSlick title="Starters and sides" bg="bg-red" layout = {1}  slideNr={4}>
-        <MMenuItem  pic="RiceAndShine" name="Rice and Shine" description=" Simply jasmine rice - as a side dish to your gyoza, to dip sauces or for an extra portion of hunger."/>
-        <MMenuItem
+      <MobileSlick title="Loaded pan fried dumplings with topping" bg="bg-red" layout = {1}  slideNr={2}>
+        <MenuItem
+          pic="MixMatchGyozaAsianCresian"
+          name="Mix & Match Gyoza – Asian Creasian"
+          description="6, 8 or 12 Gyozas of your choice on jasmine rice. There is also our sweet and fruity coconut lime sauce with coriander and roasted peanuts. Here you get the best of Thailand and Japan!"
+          ingredient="Coconut-lime sauce, coriander, roasted peanuts"
+        />
+        <MenuItem  pic="RiceAndShine" name="Rice and Shine" description=" Simply jasmine rice - as a side dish to your gyoza, to dip sauces or for an extra portion of hunger."/>
+        <MenuItem
           pic="MeSoHappy"
           name="ME SO HAPPY"
           description="Super healthy miso is eaten around the clock in Japan. And no wonder why: the spicy soup with tofu, nori seaweed and spring onions just always works. We'll spice it up with three gyozas of your choice - the most casual way to eat Japanese classics!"
           ingredient="Coconut-lime sauce, coriander, roasted peanuts"
         />
-        <MMenuItem
+        <MenuItem
           pic="MeSoHappy"
           name="ME SO HAPPY"
           description="Super healthy miso is eaten around the clock in Japan. And no wonder why: the spicy soup with tofu, nori seaweed and spring onions just always works. We'll spice it up with three gyozas of your choice - the most casual way to eat Japanese classics!"
           ingredient="Coconut-lime sauce, coriander, roasted peanuts"
         />
-        <MMenuItem
-          pic="MeSoHappy"
-          name="ME SO HAPPY"
-          description="Super healthy miso is eaten around the clock in Japan. And no wonder why: the spicy soup with tofu, nori seaweed and spring onions just always works. We'll spice it up with three gyozas of your choice - the most casual way to eat Japanese classics!"
-          ingredient="Coconut-lime sauce, coriander, roasted peanuts"
-        />
-        <MMenuItem
-          pic="MeSoHappy"
-          name="ME SO HAPPY"
-          description="Super healthy miso is eaten around the clock in Japan. And no wonder why: the spicy soup with tofu, nori seaweed and spring onions just always works. We'll spice it up with three gyozas of your choice - the most casual way to eat Japanese classics!"
-          ingredient="Coconut-lime sauce, coriander, roasted peanuts"
-        />
-
-        <MMenuItem
+        <MenuItem
           pic="MeSoHappy"
           name="ME SO HAPPY"
           description="Super healthy miso is eaten around the clock in Japan. And no wonder why: the spicy soup with tofu, nori seaweed and spring onions just always works. We'll spice it up with three gyozas of your choice - the most casual way to eat Japanese classics!"
           ingredient="Coconut-lime sauce, coriander, roasted peanuts"
         />
 
-        <MMenuItem
+        <MenuItem
           pic="MeSoHappy"
           name="ME SO HAPPY"
           description="Super healthy miso is eaten around the clock in Japan. And no wonder why: the spicy soup with tofu, nori seaweed and spring onions just always works. We'll spice it up with three gyozas of your choice - the most casual way to eat Japanese classics!"
           ingredient="Coconut-lime sauce, coriander, roasted peanuts"
         />
-       
-       {/* <h1>1</h1>
-       <h1>2</h1>
-       <h1>3</h1>
-       <h1>4</h1>
-       <h1>5</h1>
-       <h1>6</h1> */}
-       
+
+        <MenuItem
+          pic="MeSoHappy"
+          name="ME SO HAPPY"
+          description="Super healthy miso is eaten around the clock in Japan. And no wonder why: the spicy soup with tofu, nori seaweed and spring onions just always works. We'll spice it up with three gyozas of your choice - the most casual way to eat Japanese classics!"
+          ingredient="Coconut-lime sauce, coriander, roasted peanuts"
+        />
+        
       </MobileSlick>
     
   );
 };
 
-export default MMenuStarter;
+export default menuFriedDumplings;

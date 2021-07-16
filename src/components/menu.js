@@ -1,8 +1,12 @@
 import React from "react";
 import menu_text from "../images/menu_text.png";
 
-import MMenuStarter from "./mMenu_starter";
-import MMenuDeepFried from "./mMenu_deepFried";
+import MenuStarter from "./menu_starter";
+import MenuDeepFried from "./menu_deepFried";
+import MenuFriedDumplings from "./menu_friedDumplings";
+import SweetPotato from "./menu_sweetPotato";
+import Combos from "./menu_combos";
+
 const Menu = () => {
   return (
     <section id="menu" className=" menuContainer w-full  md:py-12 lg:py-16">
@@ -18,8 +22,11 @@ const Menu = () => {
           </p>
         </div>
       </div>
-      <MMenuStarter />
-      <MMenuDeepFried  />
+      <MenuStarter/>
+      <MenuDeepFried/>
+      <MenuFriedDumplings/>
+      <SweetPotato/>
+      <Combos/>
      
     </section>
   );

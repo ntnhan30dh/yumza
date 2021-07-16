@@ -1,8 +1,8 @@
 import React from "react";
 import MobileSlick from "./mobileSlick";
-import MMenuItem from "./mMenuItem";
+import MMenuItem from "./menuItem";
 
-const MMenuDeepFried = (props) => {
+const MenuDeepFried = (props) => {
   return (
     
       <MobileSlick title="Deep fried dumplings with dip" bg="bg-pink" layout ={2} slideNr={3}>
@@ -31,4 +31,4 @@ const MMenuDeepFried = (props) => {
   );
 };
 
-export default MMenuDeepFried;
+export default MenuDeepFried;

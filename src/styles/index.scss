@@ -83,7 +83,7 @@ textarea {
 
 
 .menuContainer{
-  .bg-red{
+  .bg-red, .bg-white{
     .pic{
       border-color: #FF8CF0;
     }
@@ -118,6 +118,20 @@ textarea {
           }
           .picL{
             display: block;
+          }
+        }
+      }
+      
+    }
+
+    .bg-white{
+      .text{
+        color: #d71d24 !important;
+      }
+      .navSlide {
+        .slick-slider{  
+          .pic {
+            border-color: #d71d24;
           }
         }
       }

@@ -2,7 +2,7 @@ import React from "react"
 import { graphql, useStaticQuery } from "gatsby"
 import Img from "gatsby-image"
 
-const MMenuItem = (props) => {
+const MenuItem = (props) => {
 
     const data = useStaticQuery(graphql`
     {
@@ -45,6 +45,22 @@ const MMenuItem = (props) => {
           }
         }
       }
+
+      MixMatchGyozaAsianCresian: file(relativePath: { eq: "mMenuPic_MixMatchGyozaAsianCresian.png" }) {
+        childImageSharp {
+          fluid(quality: 100, maxWidth: 700) {
+            ...GatsbyImageSharpFluid_withWebp
+          }
+        }
+      }
+
+      MixMatchGyozaAsianCresianL: file(relativePath: { eq: "MenuPic_MixMatchGyozaAsianCresian_L.png" }) {
+        childImageSharp {
+          fluid(quality: 100, maxWidth: 700) {
+            ...GatsbyImageSharpFluid_withWebp
+          }
+        }
+      }
     }
   `)
 
@@ -54,8 +70,8 @@ const MMenuItem = (props) => {
         return data.MeSoHappy.childImageSharp.fluid
       case "RiceAndShine":
         return data.RiceAndShine.childImageSharp.fluid
-      case "Katsu":
-        return data.Katsu.childImageSharp.fluid
+      case "MixMatchGyozaAsianCresian":
+        return data.MixMatchGyozaAsianCresian.childImageSharp.fluid
       case "Lucky":
         return data.Lucky.childImageSharp.fluid
       case "HappyYogi":
@@ -91,8 +107,8 @@ const MMenuItem = (props) => {
         return data.MeSoHappyL.childImageSharp.fluid
       case "RiceAndShine":
         return data.RiceAndShineL.childImageSharp.fluid
-      case "Katsu":
-        return data.Katsu.childImageSharp.fluid
+      case "MixMatchGyozaAsianCresian":
+        return data.MixMatchGyozaAsianCresianL.childImageSharp.fluid
       case "Lucky":
         return data.Lucky.childImageSharp.fluid
       case "HappyYogi":
@@ -122,19 +138,19 @@ const MMenuItem = (props) => {
     }
   }
     return (
-        <div className="mMenuItem  px-1 md:px-2" >
+        <div className="mMenuItem  px-1 md:px-6" >
         <div className={` w-full pic menu-pic border-8 border-solid`}>
           <Img className="w-full picS" fluid={pic(props.pic)} />
           <Img className="w-full picL hidden " fluid={picNav(props.pic)} />
         </div>
         <div className="text text-center md:text-left ">
-        <h1 className="name uppercase text-white font-bold tracking-wider text-3xl py-4 md:hidden">{props.name}</h1>
-        <p className=" description md:hidden barlow font-bold text-xs text-white //text-center">{props.description}</p>
-        <p className="ingredient md:hidden barlow text-white //text-center text-xs italic py-2">{props.ingredient}</p>
+        <h1 className="name uppercase text-white font-bold tracking-wider text-3xl lg:text-5xl py-4 md:hidden">{props.name}</h1>
+        <p className=" description md:hidden barlow font-bold text-xs lg:text-base text-white //text-center">{props.description}</p>
+        <p className="ingredient md:hidden barlow text-white //text-center text-xs lg:text-base italic py-2">{props.ingredient}</p>
         </div>
         </div>
 
     )
 }
 
-export default MMenuItem
+export default MenuItem
