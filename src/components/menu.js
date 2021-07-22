@@ -6,6 +6,7 @@ import MenuDeepFried from "./menu_deepFried";
 import MenuFriedDumplings from "./menu_friedDumplings";
 import SweetPotato from "./menu_sweetPotato";
 import Combos from "./menu_combos";
+import MenuDips from "./menu_dips";
 
 const Menu = () => {
   return (
@@ -26,6 +27,7 @@ const Menu = () => {
       <MenuDeepFried/>
       <MenuFriedDumplings/>
       <SweetPotato/>
+      <MenuDips/>
       <Combos/>
      
     </section>

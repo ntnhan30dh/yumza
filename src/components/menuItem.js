@@ -145,8 +145,8 @@ const MenuItem = (props) => {
         </div>
         <div className="text text-center md:text-left ">
         <h1 className="name uppercase text-white font-bold tracking-wider text-3xl lg:text-5xl py-4 md:hidden">{props.name}</h1>
-        <p className=" description md:hidden barlow font-bold text-xs lg:text-base text-white //text-center">{props.description}</p>
-        <p className="ingredient md:hidden barlow text-white //text-center text-xs lg:text-base italic py-2">{props.ingredient}</p>
+        {/* <p className=" description md:hidden barlow font-bold text-xs lg:text-base text-white //text-center">{props.description}</p>
+        <p className="ingredient md:hidden barlow text-white //text-center text-xs lg:text-base italic py-2">{props.ingredient}</p> */}
         </div>
         </div>
 
