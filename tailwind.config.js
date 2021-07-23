@@ -53,7 +53,8 @@ module.exports = {
       },
       padding: {
         '140': '140%',
-        
+        '1/10': '10%',
+        '1/20': '5%',
        },
       inset: {
         '1/20': '5%',
@@ -75,6 +76,12 @@ module.exports = {
        },
        fontSize: {
         '7.5xl': '5rem',
+        '1vw': '1vw',
+        '2vw': '2vw',
+        '3vw': '3vw',
+        '4vw': '4vw',
+        '5vw': '5vw',
+        '6vw': '6vw',
         '7vw': '7vw',
         '10vw': '10vw',
         '14vw': '14vw',

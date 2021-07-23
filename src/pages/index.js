@@ -43,7 +43,7 @@ const IndexPage = () => {
     <Header toggleMenu={toggleMenu} menuState={menuActive}/>
     <Story/>
     <Menu/>
-    <Review/>
+    {/* <Review/> */}
     <Contact/>
 
     {/* <h1 className="text-red mx-10" style={codeStyles}>Hi</h1> */}

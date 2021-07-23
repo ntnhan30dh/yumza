@@ -10,12 +10,12 @@ import MenuDips from "./menu_dips";
 
 const Menu = () => {
   return (
-    <section id="menu" className=" menuContainer w-full  md:py-12 lg:py-16">
-      <div className="textDiv w-full md:flex bg-pink">
-        <div className=" md:w-1/2 py-4 pr-4 ">
+    <section id="menu" className=" menuContainer w-full    bg-pink">
+      <div className="textDiv w-full md:flex items-start py-6 sm:py-1/10 md:py-20 ">
+        <div className=" md:w-1/2  pr-4 ">
           <img src={menu_text} alt="menu" />
         </div>{" "}
-        <div className="text  w-2/3  p-4 ">
+        <div className="text  w-3/4 md:w-2/3  pl-4 pt-4 md:pt-0 md:pr-8">
           <p className="barlow text-white text-xs xxsm:text-base md:text-lg lg:text-2xl">
             Experience an Asian fusion like no other when you order from Yumza -
             dumplings stuffed & topped for you, delivered to you, whatever your

@@ -137,16 +137,18 @@ const MenuItem = (props) => {
         return data.MeSoHappyL.childImageSharp.fluid
     }
   }
+
+  
     return (
-        <div className="mMenuItem  px-1 md:px-6" >
-        <div className={` w-full pic menu-pic border-8 border-solid`}>
+        <div className="mMenuItem  px-1 md:px-2 xl:px-3 " >
+        <div className={` w-full pic menu-pic border-8 border-solid `}>
           <Img className="w-full picS" fluid={pic(props.pic)} />
           <Img className="w-full picL hidden " fluid={picNav(props.pic)} />
         </div>
         <div className="text text-center md:text-left ">
-        <h1 className="name uppercase text-white font-bold tracking-wider text-3xl lg:text-5xl py-4 md:hidden">{props.name}</h1>
-        {/* <p className=" description md:hidden barlow font-bold text-xs lg:text-base text-white //text-center">{props.description}</p>
-        <p className="ingredient md:hidden barlow text-white //text-center text-xs lg:text-base italic py-2">{props.ingredient}</p> */}
+        <h1 className=" name uppercase text-white font-bold tracking-wider text-3xl lg:text-5xl py-4 md:hidden  ">{props.name}</h1>
+        <p className=" description md:hidden barlow font-bold text-xs md:text-1vw  //lg:text-base //xl:text-lg text-white " >{props.description}</p>
+        <p className="ingredient md:hidden barlow text-white //text-center text-xs lg:text-base xl:text-lg italic py-2">{props.ingredient}</p>
         </div>
         </div>
 

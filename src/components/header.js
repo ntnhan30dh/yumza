@@ -39,7 +39,7 @@ const Header = (props) => {
             <span className={span}>Contact</span>
           </Link>
 
-          <Link onClick={props.toggleMenu} to="/" className=" w-24 md:w-32 lg:w-32 //pb-8" >
+          <Link onClick={props.toggleMenu} to="/" className=" w-24  lg:w-32 sm:ml-10 /sm:-mt-4" >
             <img src={orderNow} alt="order now" />
           </Link>
           <div className="contactDiv sm:hidden w-full flex-grow bg-white flex flex-col justify-center items-center mt-8 ">

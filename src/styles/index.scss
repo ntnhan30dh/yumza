@@ -33,6 +33,9 @@ textarea {
 }
 // header
 
+img{
+ width: 100% !important;
+}
 .headerWrapper {
   .burgerMenu {
     display: none;
@@ -121,7 +124,10 @@ textarea {
 
     .bg-white {
       .text {
-        color: #d71d24 !important;
+       h1, p{
+
+          color: #d71d24 !important;
+        }
       }
       .navSlide {
         .slick-slider {
@@ -207,3 +213,10 @@ textarea {
     }
   }
 }
+
+.mMenuItem{
+  .description{
+    line-height: 2 !important;
+  }
+}
+
