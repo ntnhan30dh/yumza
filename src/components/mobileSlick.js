@@ -105,7 +105,7 @@ const MobileSlick = (props) => {
       </div>
       <div className="slideWrapper md:flex md:px-8 lg:px-20 py-8">
         {props.layout === 1 && (
-          <div className="navSlide hidden md:block md:w-1/3 mx-auto //pt-8">
+          <div className="navSlide hidden md:block md:w-1/3 mx-auto ">
             <Slider
               {...settings2}
               asNavFor={nav2}
@@ -179,7 +179,7 @@ const MobileSlick = (props) => {
 
         {props.layout === 3 && (
           <div className="layout3Slide w-3/4 md:w-full mx-auto pt-8  ">
-          <div className="flex mx-10">
+          <div className="  md:flex md:mx-10">
             <Slider
             {...settings}
                 ref={customeSlider}
