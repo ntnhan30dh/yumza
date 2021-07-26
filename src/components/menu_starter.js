@@ -14,26 +14,26 @@ const MenuStarter = () => {
           ingredient="Coconut-lime sauce, coriander, roasted peanuts"
         />
         <MMenuItem
-          pic="MeSoHappy"
+          pic="AsianLoveStorySalad"
           name="ME SO HAPPY"
           description="Super healthy miso is eaten around the clock in Japan. And no wonder why: the spicy soup with tofu, nori seaweed and spring onions just always works. We'll spice it up with three gyozas of your choice - the most casual way to eat Japanese classics!"
           ingredient="Coconut-lime sauce, coriander, roasted peanuts"
         />
         <MMenuItem
-          pic="MeSoHappy"
+          pic="Etamame"
           name="ME SO HAPPY"
           description="Super healthy miso is eaten around the clock in Japan. And no wonder why: the spicy soup with tofu, nori seaweed and spring onions just always works. We'll spice it up with three gyozas of your choice - the most casual way to eat Japanese classics!"
           ingredient="Coconut-lime sauce, coriander, roasted peanuts"
         />
         <MMenuItem
-          pic="MeSoHappy"
+          pic="Kimchichi"
           name="ME SO HAPPY"
           description="Super healthy miso is eaten around the clock in Japan. And no wonder why: the spicy soup with tofu, nori seaweed and spring onions just always works. We'll spice it up with three gyozas of your choice - the most casual way to eat Japanese classics!"
           ingredient="Coconut-lime sauce, coriander, roasted peanuts"
         />
 
         <MMenuItem
-          pic="MeSoHappy"
+          pic="SweetPotatoeFries"
           name="ME SO HAPPY"
           description="Super healthy miso is eaten around the clock in Japan. And no wonder why: the spicy soup with tofu, nori seaweed and spring onions just always works. We'll spice it up with three gyozas of your choice - the most casual way to eat Japanese classics!"
           ingredient="Coconut-lime sauce, coriander, roasted peanuts"
@@ -46,12 +46,6 @@ const MenuStarter = () => {
           ingredient="Coconut-lime sauce, coriander, roasted peanuts"
         />
        
-       {/* <h1>1</h1>
-       <h1>2</h1>
-       <h1>3</h1>
-       <h1>4</h1>
-       <h1>5</h1>
-       <h1>6</h1> */}
        
       </MobileSlick>
     

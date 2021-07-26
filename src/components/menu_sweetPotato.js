@@ -7,7 +7,7 @@ const SweetPotato = (props) => {
     
       <MobileSlick title="Loaded sweet potato fries" bg="bg-pink" layout ={2} slideNr={3}>
         <MMenuItem
-          pic="Shrimpyoza"
+          pic="LoadedFriesAsianCresian"
           name="Shrimpyoza"
           description="Just tastes dumlicious: These delicious dumplings are filled with shrimp, white cabbage and onions. There is also a dip of your choice - 2 dips if you order 12 pieces."
           ingredient="Shrimps, white cabbage, onion"
