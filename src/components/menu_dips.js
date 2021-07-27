@@ -29,43 +29,26 @@ const MenuDips = () => {
         className="bgContainer "
       >
        
-      
-
-      
       <MobileSlick title="Dip sauces" bg="" layout = {3}  slideNr={5}>
-        <MMenuItem  pic="RiceAndShine" name="Rice and Shine"/>
         <MMenuItem
-          pic="MeSoHappy"
-          name="ME SO HAPPY"
-         
+          pic="GingerNinjaDip"
+          name="ME SO HAPPY" 
+        />
+        <MMenuItem  pic="SayonaraMayonaraDip" name="Rice and Shine"/>
+        <MMenuItem
+          pic="KonnichiwasabiDip"
+          name="ME SO HAPPY"  
         />
         <MMenuItem
-          pic="MeSoHappy"
-          name="ME SO HAPPY"
-         
+          pic="TastyTeriyakiDip"
+          name="ME SO HAPPY"  
         />
         <MMenuItem
-          pic="MeSoHappy"
+          pic="AsianCreasianDip"
           name="ME SO HAPPY"
-         
-        />
-        <MMenuItem
-          pic="MeSoHappy"
-          name="ME SO HAPPY"
-         
         />
 
-        <MMenuItem
-          pic="MeSoHappy"
-          name="ME SO HAPPY"
-          
-        />
-
-        <MMenuItem
-          pic="MeSoHappy"
-          name="ME SO HAPPY"
-          
-        />
+        
        
   
        

@@ -395,6 +395,166 @@ const MenuItem = (props) => {
         }
       }
       
+      LoadedFriesKonnichiwaSabiM: file(
+        relativePath: { eq: "mMenuPic_LoadedFriesKonnichiwaSabi.png" }
+      ) {
+        childImageSharp {
+          fluid(quality: 100, maxWidth: 700) {
+            ...GatsbyImageSharpFluid_withWebp
+          }
+        }
+      }
+
+      LoadedFriesKonnichiwaSabi: file(
+        relativePath: { eq: "MenuPic_LoadedFriesKonnichiwaSabi.png" }
+      ) {
+        childImageSharp {
+          fluid(quality: 100, maxWidth: 700) {
+            ...GatsbyImageSharpFluid_withWebp
+          }
+        }
+      }
+
+      LoadedFriesSayonaraMmayonaraM: file(
+        relativePath: { eq: "mMenuPic_LoadedFriesSayonaraMmayonara.png" }
+      ) {
+        childImageSharp {
+          fluid(quality: 100, maxWidth: 700) {
+            ...GatsbyImageSharpFluid_withWebp
+          }
+        }
+      }
+
+      LoadedFriesSayonaraMmayonara: file(
+        relativePath: { eq: "MenuPic_LoadedFriesSayonaraMmayonara.png" }
+      ) {
+        childImageSharp {
+          fluid(quality: 100, maxWidth: 700) {
+            ...GatsbyImageSharpFluid_withWebp
+          }
+        }
+      }
+
+      LoadedFriesTastyTeriyakiM: file(
+        relativePath: { eq: "mMenuPic_LoadedFriesTastyTeriyaki.png" }
+      ) {
+        childImageSharp {
+          fluid(quality: 100, maxWidth: 700) {
+            ...GatsbyImageSharpFluid_withWebp
+          }
+        }
+      }
+
+      LoadedFriesTastyTeriyaki: file(
+        relativePath: { eq: "MenuPic_LoadedFriesTastyTeriyaki.png" }
+      ) {
+        childImageSharp {
+          fluid(quality: 100, maxWidth: 700) {
+            ...GatsbyImageSharpFluid_withWebp
+          }
+        }
+      }
+
+      GingerNinjaDipM: file(
+        relativePath: { eq: "dips_GingerNinja.png" }
+      ) {
+        childImageSharp {
+          fluid(quality: 100, maxWidth: 700) {
+            ...GatsbyImageSharpFluid_withWebp
+          }
+        }
+      }
+
+      GingerNinjaDip: file(
+        relativePath: { eq: "dips_GingerNinja.png" }
+      ) {
+        childImageSharp {
+          fluid(quality: 100, maxWidth: 700) {
+            ...GatsbyImageSharpFluid_withWebp
+          }
+        }
+      }
+
+      SayonaraMayonaraDipM: file(
+        relativePath: { eq: "dips_SayonaraMayonara.png" }
+      ) {
+        childImageSharp {
+          fluid(quality: 100, maxWidth: 700) {
+            ...GatsbyImageSharpFluid_withWebp
+          }
+        }
+      }
+
+      SayonaraMayonaraDip: file(
+        relativePath: { eq: "dips_SayonaraMayonara.png" }
+      ) {
+        childImageSharp {
+          fluid(quality: 100, maxWidth: 700) {
+            ...GatsbyImageSharpFluid_withWebp
+          }
+        }
+      }
+
+      KonnichiwasabiDipM: file(
+        relativePath: { eq: "dips_Konnichiwasabi.png" }
+      ) {
+        childImageSharp {
+          fluid(quality: 100, maxWidth: 700) {
+            ...GatsbyImageSharpFluid_withWebp
+          }
+        }
+      }
+
+      KonnichiwasabiDip: file(
+        relativePath: { eq: "dips_Konnichiwasabi.png" }
+      ) {
+        childImageSharp {
+          fluid(quality: 100, maxWidth: 700) {
+            ...GatsbyImageSharpFluid_withWebp
+          }
+        }
+      }
+      
+      TastyTeriyakiDipM: file(
+        relativePath: { eq: "dips_TastyTeriyaki.png" }
+      ) {
+        childImageSharp {
+          fluid(quality: 100, maxWidth: 700) {
+            ...GatsbyImageSharpFluid_withWebp
+          }
+        }
+      }
+
+      TastyTeriyakiDip: file(
+        relativePath: { eq: "dips_TastyTeriyaki.png" }
+      ) {
+        childImageSharp {
+          fluid(quality: 100, maxWidth: 700) {
+            ...GatsbyImageSharpFluid_withWebp
+          }
+        }
+      }
+      
+      AsianCreasianDipM: file(
+        relativePath: { eq: "dips_AsianCreasian.png" }
+      ) {
+        childImageSharp {
+          fluid(quality: 100, maxWidth: 700) {
+            ...GatsbyImageSharpFluid_withWebp
+          }
+        }
+      }
+
+      AsianCreasianDip: file(
+        relativePath: { eq: "dips_AsianCreasian.png" }
+      ) {
+        childImageSharp {
+          fluid(quality: 100, maxWidth: 700) {
+            ...GatsbyImageSharpFluid_withWebp
+          }
+        }
+      }
+
     }
   `);
 
@@ -429,10 +589,29 @@ const MenuItem = (props) => {
                           return data.MixMatchGyozaTastyTeriyaki.childImageSharp.fluid;
                           case "LoadedFriesAsianCresian":
                             return data.LoadedFriesAsianCresian.childImageSharp.fluid;
-                            case "GatsuSide":
-                              return data.GatsuSide.childImageSharp.fluid;
-                                case "Shrimpyoza":
-                                  return data.Shrimpyoza.childImageSharp.fluid;
+                            case "LoadedFriesKonnichiwaSabi":
+                              return data.LoadedFriesKonnichiwaSabi.childImageSharp.fluid;
+                                case "LoadedFriesSayonaraMmayonara":
+                                  return data.LoadedFriesSayonaraMmayonara.childImageSharp.fluid;
+                                  case "LoadedFriesTastyTeriyaki":
+                                  return data.LoadedFriesTastyTeriyaki.childImageSharp.fluid;
+                                  case "GingerNinjaDip":
+                                  return data.GingerNinjaDip.childImageSharp.fluid;
+                                  case "SayonaraMayonaraDip":
+                                  return data.SayonaraMayonaraDip.childImageSharp.fluid;
+                                  case "KonnichiwasabiDip":
+                                  return data.KonnichiwasabiDip.childImageSharp.fluid;
+                                  case "TastyTeriyakiDip":
+                                  return data.TastyTeriyakiDip.childImageSharp.fluid;
+                                  case "AsianCreasianDip":
+                                  return data.AsianCreasianDip.childImageSharp.fluid;
+                                  // case "Shrimpyoza":
+                                  // return data.Shrimpyoza.childImageSharp.fluid;
+                                  // case "Shrimpyoza":
+                                  // return data.Shrimpyoza.childImageSharp.fluid;
+                                  // case "Shrimpyoza":
+                                  // return data.Shrimpyoza.childImageSharp.fluid;
+
       default:
         return data.MeSoHappy.childImageSharp.fluid;
     }

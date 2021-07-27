@@ -12,15 +12,15 @@ const SweetPotato = (props) => {
           description="Just tastes dumlicious: These delicious dumplings are filled with shrimp, white cabbage and onions. There is also a dip of your choice - 2 dips if you order 12 pieces."
           ingredient="Shrimps, white cabbage, onion"
         />
-        <MMenuItem  pic="RiceAndShine" name="Rice and Shine" description=" Simply jasmine rice - as a side dish to your gyoza, to dip sauces or for an extra portion of hunger."/>
+        <MMenuItem  pic="LoadedFriesKonnichiwaSabi" name="Rice and Shine" description=" Simply jasmine rice - as a side dish to your gyoza, to dip sauces or for an extra portion of hunger."/>
         <MMenuItem
-          pic="Shrimpyoza"
+          pic="LoadedFriesSayonaraMmayonara"
           name="Shrimpyoza"
           description="Just tastes dumlicious: These delicious dumplings are filled with shrimp, white cabbage and onions. There is also a dip of your choice - 2 dips if you order 12 pieces."
           ingredient="Shrimps, white cabbage, onion"
         />
         <MMenuItem
-          pic="Shrimpyoza"
+          pic="LoadedFriesTastyTeriyaki"
           name="Shrimpyoza"
           description="Just tastes dumlicious: These delicious dumplings are filled with shrimp, white cabbage and onions. There is also a dip of your choice - 2 dips if you order 12 pieces."
           ingredient="Shrimps, white cabbage, onion"
