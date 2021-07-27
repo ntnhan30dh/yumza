@@ -6,53 +6,23 @@ const Combos = () => {
   
   return (
       <MobileSlick title="COMBOS" bg="bg-white" layout = {1}  slideNr={3} bottomPic="hidden">
-        <MMenuItem  pic="RiceAndShine" name="Rice and Shine" description=" Simply jasmine rice - as a side dish to your gyoza, to dip sauces or for an extra portion of hunger."/>
+        <MMenuItem  pic="RiceAndShine" name="Dumplings & Friends" description="Your perfect menu - pick your favourite gyoza, loaded fries and drink."/>
         <MMenuItem
           pic="MeSoHappy"
-          name="ME SO HAPPY"
-          description="Super healthy miso is eaten around the clock in Japan. And no wonder why: the spicy soup with tofu, nori seaweed and spring onions just always works. We'll spice it up with three gyozas of your choice - the most casual way to eat Japanese classics!"
-          ingredient="Coconut-lime sauce, coriander, roasted peanuts"
+          name="Try them all"
+          description="Cannot decide which type of gyoza? Well, try them all! In this combo you get: 3 Mandu, 3 Shrimps, 3 Chicken, 3 Tofu with topping of your choice."
+      
         />
         <MMenuItem
           pic="MeSoHappy"
-          name="ME SO HAPPY"
-          description="Super healthy miso is eaten around the clock in Japan. And no wonder why: the spicy soup with tofu, nori seaweed and spring onions just always works. We'll spice it up with three gyozas of your choice - the most casual way to eat Japanese classics!"
-          ingredient="Coconut-lime sauce, coriander, roasted peanuts"
+          name="Dumpling All in!"
+          description="Dumplings all round whether you're craving meat, veggies or shrimps. So many flavours it never gets boring with 24 dumplings plus 2 toppings of your choice."
         />
         <MMenuItem
           pic="MeSoHappy"
-          name="ME SO HAPPY"
-          description="Super healthy miso is eaten around the clock in Japan. And no wonder why: the spicy soup with tofu, nori seaweed and spring onions just always works. We'll spice it up with three gyozas of your choice - the most casual way to eat Japanese classics!"
-          ingredient="Coconut-lime sauce, coriander, roasted peanuts"
+          name="Yumza House party"
+          description="Gather around the table for a feast of dumplings and fusion of flavours - 24 dumplings with 2 toppings of your choice, loaded fries and 2 drinks. Let's get this party started!"
         />
-        <MMenuItem
-          pic="MeSoHappy"
-          name="ME SO HAPPY"
-          description="Super healthy miso is eaten around the clock in Japan. And no wonder why: the spicy soup with tofu, nori seaweed and spring onions just always works. We'll spice it up with three gyozas of your choice - the most casual way to eat Japanese classics!"
-          ingredient="Coconut-lime sauce, coriander, roasted peanuts"
-        />
-
-        <MMenuItem
-          pic="MeSoHappy"
-          name="ME SO HAPPY"
-          description="Super healthy miso is eaten around the clock in Japan. And no wonder why: the spicy soup with tofu, nori seaweed and spring onions just always works. We'll spice it up with three gyozas of your choice - the most casual way to eat Japanese classics!"
-          ingredient="Coconut-lime sauce, coriander, roasted peanuts"
-        />
-
-        <MMenuItem
-          pic="MeSoHappy"
-          name="ME SO HAPPY"
-          description="Super healthy miso is eaten around the clock in Japan. And no wonder why: the spicy soup with tofu, nori seaweed and spring onions just always works. We'll spice it up with three gyozas of your choice - the most casual way to eat Japanese classics!"
-          ingredient="Coconut-lime sauce, coriander, roasted peanuts"
-        />
-       
-       {/* <h1>1</h1>
-       <h1>2</h1>
-       <h1>3</h1>
-       <h1>4</h1>
-       <h1>5</h1>
-       <h1>6</h1> */}
-       
       </MobileSlick>
     
   );

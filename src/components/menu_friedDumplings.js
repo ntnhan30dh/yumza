@@ -12,19 +12,19 @@ const menuFriedDumplings = () => {
           description="6, 8 or 12 Gyozas of your choice on jasmine rice. There is also our sweet and fruity coconut lime sauce with coriander and roasted peanuts. Here you get the best of Thailand and Japan!"
           ingredient="Coconut-lime sauce, coriander, roasted peanuts"
         />
+        <MenuItem  pic="MixMatchGyozaSayonaraMayonara" name="Mix & Match Gyoza – Sayonara Mayonara" description=" 6, 8 or 12 Gyozas of your choice on jasmine rice. We also deliver the real Japanese flavor with our slightly spicy chili mayo, crunchy nori seaweed and roasted sesame. Our favorite." ingredient="Chili sushi mayo, Nori algues, roasted sesame"/>
         <MenuItem
           pic="MixMatchGyozaKonnichiwaSabi"
-          name="ME SO HAPPY"
-          description="Super healthy miso is eaten around the clock in Japan. And no wonder why: the spicy soup with tofu, nori seaweed and spring onions just always works. We'll spice it up with three gyozas of your choice - the most casual way to eat Japanese classics!"
-          ingredient="Coconut-lime sauce, coriander, roasted peanuts"
+          name="Mix & Match Gyoza – Konnichiwa-sabi"
+          description="6, 8 or 12 Gyozas of your choice on jasmine rice. The topping is wasabi mayo, fresh cucumber cubes and a little mint."
+          ingredient="Wasabi mayonnaise, cucumber, mint"
         />
-        <MenuItem  pic="MixMatchGyozaSayonaraMayonara" name="Rice and Shine" description=" Simply jasmine rice - as a side dish to your gyoza, to dip sauces or for an extra portion of hunger."/>
      
         <MenuItem
           pic="MixMatchGyozaTastyTeriyaki"
-          name="ME SO HAPPY"
-          description="Super healthy miso is eaten around the clock in Japan. And no wonder why: the spicy soup with tofu, nori seaweed and spring onions just always works. We'll spice it up with three gyozas of your choice - the most casual way to eat Japanese classics!"
-          ingredient="Coconut-lime sauce, coriander, roasted peanuts"
+          name="Mix & Match Gyoza – Tasty Teriyaki"
+          description="6, 8 or 12 Gyozas of your choice on jasmine rice. With teriyaki sauce, Japanese mayonnaise and fried onions - classic & good!"
+          ingredient="Teriyaki, Sushi mayo, fried onion"
         />
 
        

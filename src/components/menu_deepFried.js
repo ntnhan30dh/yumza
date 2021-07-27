@@ -12,18 +12,17 @@ const MenuDeepFried = (props) => {
           description="Just tastes dumlicious: These delicious dumplings are filled with shrimp, white cabbage and onions. There is also a dip of your choice - 2 dips if you order 12 pieces."
           ingredient="Shrimps, white cabbage, onion"
         />
-        <MMenuItem  pic="CheekyChickenGyoza" name="Rice and Shine" description=" Simply jasmine rice - as a side dish to your gyoza, to dip sauces or for an extra portion of hunger."/>
+        <MMenuItem  pic="CheekyChickenGyoza" name="Cheeky Chicken Gyoza" description="Japanese gyoza, filled with chicken, white cabbage and onions. There is also a dip of your choice - 2 dips if you order 12 pieces." ingredient="Chicken, white cabbage, onion"/>
         <MMenuItem
           pic="VegGyoza"
-          name="Shrimpyoza"
-          description="Just tastes dumlicious: These delicious dumplings are filled with shrimp, white cabbage and onions. There is also a dip of your choice - 2 dips if you order 12 pieces."
-          ingredient="Shrimps, white cabbage, onion"
+          name="VEG-Gyoza"
+          description="Carinthian noodles in Japanese? Gyoza! Our delicious vegetarian variant is filled with tofu and vegetables. There is also a dip of your choice - 2 dips if you order 12 pieces."
+          ingredient="Tofu, vegetables"
         />
         <MMenuItem
           pic="SmokeyBeefMandu"
-          name="Shrimpyoza"
-          description="Just tastes dumlicious: These delicious dumplings are filled with shrimp, white cabbage and onions. There is also a dip of your choice - 2 dips if you order 12 pieces."
-          ingredient="Shrimps, white cabbage, onion"
+          name="Smokey Beef Mandu"
+          description="Dumplings that surprise: Mandus are the Korean version of the Gyoza and slightly bigger than their Japanese relatives. They are filled with spicy BBQ beef. There is also a dip of your choice - 2 dips if you order 12 pieces."
         />
     
       </MobileSlick>

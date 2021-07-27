@@ -573,6 +573,8 @@ const MenuItem = (props) => {
             return data.Kimchichi.childImageSharp.fluid;
             case "SweetPotatoeFries":
               return data.SweetPotatoeFries.childImageSharp.fluid;
+               case "Shrimpyoza":
+                  return data.Shrimpyoza.childImageSharp.fluid;
               case "CheekyChickenGyoza":
                 return data.CheekyChickenGyoza.childImageSharp.fluid;
                 case "VegGyoza":
@@ -605,8 +607,7 @@ const MenuItem = (props) => {
                                   return data.TastyTeriyakiDip.childImageSharp.fluid;
                                   case "AsianCreasianDip":
                                   return data.AsianCreasianDip.childImageSharp.fluid;
-                                  // case "Shrimpyoza":
-                                  // return data.Shrimpyoza.childImageSharp.fluid;
+                                 
                                   // case "Shrimpyoza":
                                   // return data.Shrimpyoza.childImageSharp.fluid;
                                   // case "Shrimpyoza":
@@ -619,35 +620,51 @@ const MenuItem = (props) => {
   const picM = (picName) => {
     switch (picName) {
       case "MeSoHappy":
-        return data.MeSoHappy.childImageSharp.fluid;
+        return data.MeSoHappyM.childImageSharp.fluid;
       case "RiceAndShine":
-        return data.RiceAndShine.childImageSharp.fluid;
-      case "MixMatchGyozaAsianCresian":
-        return data.MixMatchGyozaAsianCresian.childImageSharp.fluid;
-      case "Lucky":
-        return data.Lucky.childImageSharp.fluid;
-      case "HappyYogi":
-        return data.HappyYogi.childImageSharp.fluid;
-      case "Shrimpyoza":
-        return data.Shrimpyoza.childImageSharp.fluid;
-      case "GreenDelight":
-        return data.GreenDelight.childImageSharp.fluid;
-      case "ThaiBurger":
-        return data.ThaiBurger.childImageSharp.fluid;
-      case "VegGyozaq":
-        return data.SpiceItUp.childImageSharp.fluid;
-      case "TeriyakiBurger":
-        return data.TeriyakiBurger.childImageSharp.fluid;
-      case "GoldenGate":
-        return data.GoldenGate.childImageSharp.fluid;
-      case "KPop":
-        return data.Kpop.childImageSharp.fluid;
-      case "Rock_n_Rolls":
-        return data.Rock_n_Rolls.childImageSharp.fluid;
-      case "Dumplings":
-        return data.Dumplings.childImageSharp.fluid;
-      case "GatsuSide":
-        return data.GatsuSide.childImageSharp.fluid;
+        return data.RiceAndShineM.childImageSharp.fluid;
+      case "AsianLoveStorySalad":
+        return data.AsianLoveStorySaladM.childImageSharp.fluid;
+        case "Etamame":
+          return data.EtamameM.childImageSharp.fluid;
+          case "Kimchichi":
+            return data.KimchichiM.childImageSharp.fluid;
+            case "SweetPotatoeFries":
+              return data.SweetPotatoeFriesM.childImageSharp.fluid;
+               case "Shrimpyoza":
+                  return data.ShrimpyozaM.childImageSharp.fluid;
+              case "CheekyChickenGyoza":
+                return data.CheekyChickenGyozaM.childImageSharp.fluid;
+                case "VegGyoza":
+                  return data.VegGyozaM.childImageSharp.fluid;
+                  case "SmokeyBeefMandu":
+                    return data.SmokeyBeefManduM.childImageSharp.fluid;
+                    case "MixMatchGyozaAsianCresian":
+                      return data.MixMatchGyozaAsianCresianM.childImageSharp.fluid;
+                    case "MixMatchGyozaKonnichiwaSabi":
+                      return data.MixMatchGyozaKonnichiwaSabiM.childImageSharp.fluid;
+                      case "MixMatchGyozaSayonaraMayonara":
+                        return data.MixMatchGyozaSayonaraMayonaraM.childImageSharp.fluid;
+                        case "MixMatchGyozaTastyTeriyaki":
+                          return data.MixMatchGyozaTastyTeriyakiM.childImageSharp.fluid;
+                          case "LoadedFriesAsianCresian":
+                            return data.LoadedFriesAsianCresianM.childImageSharp.fluid;
+                            case "LoadedFriesKonnichiwaSabi":
+                              return data.LoadedFriesKonnichiwaSabiM.childImageSharp.fluid;
+                                case "LoadedFriesSayonaraMmayonara":
+                                  return data.LoadedFriesSayonaraMmayonaraM.childImageSharp.fluid;
+                                  case "LoadedFriesTastyTeriyaki":
+                                  return data.LoadedFriesTastyTeriyakiM.childImageSharp.fluid;
+                                  case "GingerNinjaDip":
+                                  return data.GingerNinjaDipM.childImageSharp.fluid;
+                                  case "SayonaraMayonaraDip":
+                                  return data.SayonaraMayonaraDipM.childImageSharp.fluid;
+                                  case "KonnichiwasabiDip":
+                                  return data.KonnichiwasabiDipM.childImageSharp.fluid;
+                                  case "TastyTeriyakiDip":
+                                  return data.TastyTeriyakiDipM.childImageSharp.fluid;
+                                  case "AsianCreasianDip":
+                                  return data.AsianCreasianDipM.childImageSharp.fluid;
       default:
         return data.MeSoHappy.childImageSharp.fluid;
     }
@@ -658,32 +675,48 @@ const MenuItem = (props) => {
         return data.MeSoHappyL.childImageSharp.fluid;
       case "RiceAndShine":
         return data.RiceAndShineL.childImageSharp.fluid;
-      case "MixMatchGyozaAsianCresian":
-        return data.MixMatchGyozaAsianCresianL.childImageSharp.fluid;
-      case "Lucky":
-        return data.Lucky.childImageSharp.fluid;
-      case "HappyYogi":
-        return data.HappyYogi.childImageSharp.fluid;
-      case "Shrimpyoza":
-        return data.Shrimpyoza.childImageSharp.fluid;
-      case "GreenDelight":
-        return data.GreenDelight.childImageSharp.fluid;
-      case "ThaiBurger":
-        return data.ThaiBurger.childImageSharp.fluid;
-      case "SpiceItUp":
-        return data.SpiceItUp.childImageSharp.fluid;
-      case "TeriyakiBurger":
-        return data.TeriyakiBurger.childImageSharp.fluid;
-      case "GoldenGate":
-        return data.GoldenGate.childImageSharp.fluid;
-      case "KPop":
-        return data.Kpop.childImageSharp.fluid;
-      case "Rock_n_Rolls":
-        return data.Rock_n_Rolls.childImageSharp.fluid;
-      case "Dumplings":
-        return data.Dumplings.childImageSharp.fluid;
-      case "GatsuSide":
-        return data.GatsuSide.childImageSharp.fluid;
+      case "AsianLoveStorySalad":
+        return data.AsianLoveStorySaladL.childImageSharp.fluid;
+        case "Etamame":
+          return data.EtamameL.childImageSharp.fluid;
+          case "Kimchichi":
+            return data.KimchichiL.childImageSharp.fluid;
+            case "SweetPotatoeFries":
+              return data.SweetPotatoeFriesL.childImageSharp.fluid;
+              case "Shrimpyoza":
+                  return data.Shrimpyoza.childImageSharp.fluid;
+              case "CheekyChickenGyoza":
+                return data.CheekyChickenGyoza.childImageSharp.fluid;
+                case "VegGyoza":
+                  return data.VegGyoza.childImageSharp.fluid;
+                  case "SmokeyBeefMandu":
+                    return data.SmokeyBeefMandu.childImageSharp.fluid;
+                    case "MixMatchGyozaAsianCresian":
+                      return data.MixMatchGyozaAsianCresianL.childImageSharp.fluid;
+                    case "MixMatchGyozaKonnichiwaSabi":
+                      return data.MixMatchGyozaKonnichiwaSabiL.childImageSharp.fluid;
+                      case "MixMatchGyozaSayonaraMayonara":
+                        return data.MixMatchGyozaSayonaraMayonaraL.childImageSharp.fluid;
+                        case "MixMatchGyozaTastyTeriyaki":
+                          return data.MixMatchGyozaTastyTeriyakiL.childImageSharp.fluid;
+                          case "LoadedFriesAsianCresian":
+                            return data.LoadedFriesAsianCresian.childImageSharp.fluid;
+                            case "LoadedFriesKonnichiwaSabi":
+                              return data.LoadedFriesKonnichiwaSabi.childImageSharp.fluid;
+                                case "LoadedFriesSayonaraMmayonara":
+                                  return data.LoadedFriesSayonaraMmayonara.childImageSharp.fluid;
+                                  case "LoadedFriesTastyTeriyaki":
+                                  return data.LoadedFriesTastyTeriyaki.childImageSharp.fluid;
+                                  case "GingerNinjaDip":
+                                  return data.GingerNinjaDip.childImageSharp.fluid;
+                                  case "SayonaraMayonaraDip":
+                                  return data.SayonaraMayonaraDip.childImageSharp.fluid;
+                                  case "KonnichiwasabiDip":
+                                  return data.KonnichiwasabiDip.childImageSharp.fluid;
+                                  case "TastyTeriyakiDip":
+                                  return data.TastyTeriyakiDip.childImageSharp.fluid;
+                                  case "AsianCreasianDip":
+                                  return data.AsianCreasianDip.childImageSharp.fluid;
       default:
         return data.MeSoHappyL.childImageSharp.fluid;
     }
