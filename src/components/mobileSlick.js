@@ -1,6 +1,10 @@
 import Slider from "react-slick";
 import React, { useRef, useState } from "react";
-import chopstick3 from "../images/chopstick3.png";
+
+import chopstick4 from "../images/chopstick4.png";
+import handDish from "../images/handDish.png";
+import dumplingsDish from "../images/dumplingsDish.png";
+import handHeart from "../images/handHeart.png";
 import star from "../images/star_red.png";
 import btn from "../images/btnNext.png";
 import btnRed from "../images/btnNext_red.png";
@@ -84,14 +88,21 @@ const MobileSlick = (props) => {
     focusOnSelect: false,
     fade: true,
     arrows: false,
+    swipe: false,
   };
 
   const pic = (title) => {
     switch (title) {
       case "Starters and sides":
-        return chopstick3;
+        return chopstick4;
+      case "Deep fried dumplings with dip":
+          return handDish;
+          case "Loaded pan fried dumplings with topping":
+            return dumplingsDish;
+            case "Loaded sweet potato fries":
+            return handHeart;
       default:
-        return chopstick3;
+        return chopstick4;
     }
   };
 
@@ -130,7 +141,7 @@ const MobileSlick = (props) => {
               </Slider>
             </div>
             <div className="md:flex w-full xl:pt-1/20">
-              <div className="textSlide hidden md:block w-1/2  xl:w-2/5  mx-auto pt-8">
+              <div className={`textSlide hidden md:block w-3/4 xl:w-1/2 mx-auto pt-8 xl:pt-14 ${props.paddingText}`}>
                 <Slider
                   {...settings3}
                   asNavFor={nav3}
@@ -146,7 +157,7 @@ const MobileSlick = (props) => {
                   <img src={props.bottomPic === "hidden"?btnRed:btn} alt="next" />
                 </div>
               </button>
-              {props.bottomPic !== "hidden"&&<div className=" w-3/4 mx-auto p-3 md:w-full md:px-0 md:absolute bottom-1/10 xl:bottom-0">
+              {props.bottomPic !== "hidden"&&<div className=" w-3/4 mx-auto p-3 md:w-full md:px-0 md:absolute //bottom-1/10 xl:bottom-0">
                 <img src={pic(props.title)} alt="chopstick3" />
               </div>}
 
@@ -165,7 +176,7 @@ const MobileSlick = (props) => {
               {props.children}
             </Slider>
             <div className="picAndButtton md:flex md:absolute md:w-2/3 bottom-0 right-0 md:mr-2">
-            <div className=" w-3/4 mx-auto p-3 ">
+            <div className=" w-1/4 mx-auto p-3 ">
               <img src={pic(props.title)} alt="chopstick3" />
             </div>
             <button onClick={() => gotoNext()} className="hidden md:block">

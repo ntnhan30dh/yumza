@@ -730,7 +730,7 @@ const MenuItem = (props) => {
         <Img className="w-full picL hidden " fluid={picNav(props.pic)} />
       </div>
       <div className="text text-center md:text-left ">
-        <h1 className=" name uppercase text-white font-bold tracking-wider text-3xl lg:text-5xl py-4 md:hidden  ">
+        <h1 className=" name uppercase text-white font-bold tracking-wider text-3xl lg:text-4xl xl:text-5xl py-4 md:hidden  ">
           {props.name}
         </h1>
         <p className=" description md:hidden barlow font-bold text-xs md:text-1vw  //lg:text-base //xl:text-lg text-white ">
