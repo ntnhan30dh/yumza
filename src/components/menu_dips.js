@@ -24,7 +24,7 @@ const MenuDips = () => {
        <BackgroundImage
         Tag="section"
         fluid={imageData}
-        background-size="cover"
+        background-size="content"
         opacity={0.5}
         className="bgContainer "
       >
@@ -32,26 +32,22 @@ const MenuDips = () => {
       <MobileSlick title="Dip sauces" bg="" layout = {3}  slideNr={5}>
         <MMenuItem
           pic="GingerNinjaDip"
-          name="ME SO HAPPY" 
+          name="Ginger Ninja Dip" 
         />
-        <MMenuItem  pic="SayonaraMayonaraDip" name="Rice and Shine"/>
+        <MMenuItem  pic="SayonaraMayonaraDip" name="Sayonara Mayonara Dip"/>
         <MMenuItem
           pic="KonnichiwasabiDip"
-          name="ME SO HAPPY"  
+          name="Konnichiwa-sabi Dip"  
         />
         <MMenuItem
           pic="TastyTeriyakiDip"
-          name="ME SO HAPPY"  
+          name="Tasty Teriyaki Dip"  
         />
         <MMenuItem
           pic="AsianCreasianDip"
-          name="ME SO HAPPY"
+          name="Asian Creasian Dip"
         />
-
-        
-       
-  
-       
+ 
       </MobileSlick>
       </BackgroundImage> 
   );

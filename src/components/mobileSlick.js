@@ -20,8 +20,6 @@ const MobileSlick = (props) => {
     customeSlider.current.slickNext();
   };
 
-  
-
   const slideNr = props.slideNr;
 
   const settings = {
@@ -96,22 +94,22 @@ const MobileSlick = (props) => {
       case "Starters and sides":
         return chopstick4;
       case "Deep fried dumplings with dip":
-          return handDish;
-          case "Loaded pan fried dumplings with topping":
-            return dumplingsDish;
-            case "Loaded sweet potato fries":
-            return handHeart;
+        return handDish;
+      case "Loaded pan fried dumplings with topping":
+        return dumplingsDish;
+      case "Loaded sweet potato fries":
+        return handHeart;
       default:
         return chopstick4;
     }
   };
 
   return (
-    <div className={`sliderContainer ${props.bg}  `} >
+    <div className={`sliderContainer ${props.bg}  `}>
       <div className="title bg-white text-center md:text-left md:text-2xl italic font-bold tracking-wider py-2 md:py-4 md:flex items-center">
-      <div className="w-4 hidden md:block mx-4 "> 
-                <img src={star} alt="chopstick3" />
-              </div>
+        <div className="w-4 hidden md:block mx-4 ">
+          <img src={star} alt="chopstick3" />
+        </div>
         <h1 className="uppercase text-red"> {props.title}</h1>
       </div>
       <div className="slideWrapper md:flex md:px-8 lg:px-20 py-8">
@@ -141,7 +139,9 @@ const MobileSlick = (props) => {
               </Slider>
             </div>
             <div className="md:flex w-full xl:pt-1/20">
-              <div className={`textSlide hidden md:block w-3/4 xl:w-1/2 mx-auto pt-8 xl:pt-14 ${props.paddingText}`}>
+              <div
+                className={`textSlide hidden md:block w-3/4 xl:w-1/2 mx-auto pt-8 xl:pt-14 ${props.paddingText}`}
+              >
                 <Slider
                   {...settings3}
                   asNavFor={nav3}
@@ -152,15 +152,22 @@ const MobileSlick = (props) => {
                 </Slider>
               </div>
               <div className="picAndArrow relative //md:flex flex-col align-items: flex-end justify-end pt-8 w-full md:mr-2">
-              <button onClick={() => gotoNext()} className="hidden md:block absolute right-0">
-                <div className=" w-8 lg:w-12 ">
-                  <img src={props.bottomPic === "hidden"?btnRed:btn} alt="next" />
-                </div>
-              </button>
-              {props.bottomPic !== "hidden"&&<div className=" w-3/4 mx-auto p-3 md:w-full md:px-0 md:absolute //bottom-1/10 xl:bottom-0">
-                <img src={pic(props.title)} alt="chopstick3" />
-              </div>}
-
+                <button
+                  onClick={() => gotoNext()}
+                  className="hidden md:block absolute right-0 z-50"
+                >
+                  <div className=" w-8 lg:w-12 ">
+                    <img
+                      src={props.bottomPic === "hidden" ? btnRed : btn}
+                      alt="next"
+                    />
+                  </div>
+                </button>
+                {props.bottomPic !== "hidden" && (
+                  <div className=" w-3/4 mx-auto p-3 md:w-full md:px-0 md:absolute //bottom-1/10 xl:bottom-0">
+                    <img src={pic(props.title)} alt="chopstick3" />
+                  </div>
+                )}
               </div>
             </div>
           </div>
@@ -176,45 +183,35 @@ const MobileSlick = (props) => {
               {props.children}
             </Slider>
             <div className="picAndButtton md:flex md:absolute md:w-2/3 bottom-0 right-0 md:mr-2">
-            <div className=" w-1/4 mx-auto p-3 ">
-              <img src={pic(props.title)} alt="chopstick3" />
-            </div>
-            <button onClick={() => gotoNext()} className="hidden md:block">
-              <div className=" w-8 lg:w-12">
-                <img src={btn} alt="next" />
+              <div className=" w-1/4 mx-auto p-3 ">
+                <img src={pic(props.title)} alt="chopstick3" />
               </div>
-            </button>
+              <button onClick={() => gotoNext()} className="hidden md:block">
+                <div className=" w-8 lg:w-12">
+                  <img src={btn} alt="next" />
+                </div>
+              </button>
             </div>
           </div>
         )}
 
         {props.layout === 3 && (
           <div className="layout3Slide w-3/4 md:w-full mx-auto pt-8  ">
-          <div className="  md:flex md:mx-10">
-            <Slider
-            {...settings}
+            <div className="  md:flex md:mx-10">
+              <Slider
+                {...settings}
                 ref={customeSlider}
                 asNavFor={nav1}
-                className={` w-full`}
-            >
-              {props.children}
-            </Slider>
-            <button onClick={() => gotoNext()} className="hidden md:block">
-              <div className=" w-8 lg:w-12">
-                <img src={btn} alt="next" />
-              </div>
-            </button>
-          </div>
-          <div className="textSlide hidden md:block w-full  ">
-                <Slider
-                  {...settings3}
-                  asNavFor={nav2}
-                  ref={(slider1) => setNav1(slider1)}
-                  className={` w-full `}
-                >
-                  {props.children}
-                </Slider>
-              </div>
+                className={` w-full px-1/10`}
+              >
+                {props.children}
+              </Slider>
+              <button onClick={() => gotoNext()} className="hidden md:block">
+                <div className=" w-8 lg:w-12 -mt-20">
+                  <img src={btn} alt="next" />
+                </div>
+              </button>
+            </div>
           
           </div>
         )}
