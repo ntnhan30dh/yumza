@@ -690,7 +690,7 @@ const MenuItem = (props) => {
     <div className="mMenuItem relative px-1 md:px-2 xl:px-3 ">   
       <div className={` relative w-full pic menu-pic border-8 border-solid `}>
       <div className=" stars hidden absolute  bottom-0 z-10 w-full h-full flex justify-center items-center">
-      <div className="w-16">
+      <div className="w-10 xl:w-16">
         {" "}
         <img src={doubleStars} alt="stars" className="ml-4"/>
       </div>

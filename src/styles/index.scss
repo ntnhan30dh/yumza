@@ -188,13 +188,7 @@ img{
       .slick-list{
         overflow: visible;
       }
-      .slick-slider {
-        .pic {
-          border: none;
-         // padding: 0 15%;
-         // margin-left: -30%;
-        }
-      }
+     
       .slick-current {   
         .name {
          opacity: 1 !important;
@@ -265,4 +259,35 @@ img{
 
 .spin {
   animation: spin 10s linear infinite forwards;
+}
+
+.layout3Slide {
+  .name{
+    display: none ;
+  }
+  .nameS{
+    display: none !important;
+  }
+
+       
+  .slick-current {   
+    .name {
+     opacity: 1 !important;
+    display: block;
+    width: 200%;
+   margin-left: -50%;
+   white-space: nowrap;
+   text-align: center;
+    }
+    .stars{
+      display: flex
+    }
+
+  }
+
+  .slick-slider {
+    .pic {
+      border: none;
+    }
+  }
 }

@@ -5,7 +5,7 @@ import MenuItem from "./menuItem";
 const menuFriedDumplings = () => {
   
   return (
-      <MobileSlick title="Loaded pan fried dumplings with topping" bg="bg-red" layout = {1}  slideNr={2}>
+      <MobileSlick title="Loaded pan fried dumplings with topping" bg="bg-red" layout = {1}  slideNr={2} picW="w-1/2 lg:w-3/5 md:w-full mt-10 xl:mt-0">
         <MenuItem
           pic="MixMatchGyozaAsianCresian"
           name="Mix & Match Gyoza – Asian Creasian"
@@ -26,9 +26,7 @@ const menuFriedDumplings = () => {
           description="6, 8 or 12 Gyozas of your choice on jasmine rice. With teriyaki sauce, Japanese mayonnaise and fried onions - classic & good!"
           ingredient="Teriyaki, Sushi mayo, fried onion"
         />
-
-       
-        
+   
       </MobileSlick>
     
   );

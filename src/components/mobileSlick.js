@@ -7,7 +7,9 @@ import dumplingsDish from "../images/dumplingsDish.png";
 import handHeart from "../images/handHeart.png";
 import star from "../images/star_red.png";
 import btn from "../images/btnNext.png";
+import btnPrev from "../images/btnPrev.png";
 import btnRed from "../images/btnNext_red.png";
+import btnRed_prev from "../images/btnPrev_red.png";
 
 const MobileSlick = (props) => {
   const [nav1, setNav1] = useState();
@@ -20,6 +22,10 @@ const MobileSlick = (props) => {
     customeSlider.current.slickNext();
   };
 
+  const gotoPrev = () => {
+    customeSlider.current.slickPrev();
+  };
+
   const slideNr = props.slideNr;
 
   const settings = {
@@ -28,10 +34,6 @@ const MobileSlick = (props) => {
     speed: 1000,
     slidesToShow: slideNr,
 
-    // adaptiveHeight:false,
-    // variableWidth: true,
-    //initialSlide:13,
-    //focusOnSelect: true,
     arrows: false,
     responsive: [
       {
@@ -40,7 +42,6 @@ const MobileSlick = (props) => {
           slidesToShow: slideNr,
           slidesToScroll: 1,
           infinite: true,
-          // dots: true,
         },
       },
       {
@@ -57,7 +58,7 @@ const MobileSlick = (props) => {
           slidesToShow: 1,
           slidesToScroll: 1,
           // centerMode: true,
-          // centerPadding: '5%',
+          //centerPadding: '5%',
         },
       },
     ],
@@ -89,6 +90,43 @@ const MobileSlick = (props) => {
     swipe: false,
   };
 
+  const settings4 = {
+    dots: false,
+    infinite: true,
+    speed: 1000,
+    slidesToShow: slideNr,
+
+    arrows: false,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: slideNr,
+          slidesToScroll: 1,
+          infinite: true,
+        },
+      },
+      {
+        breakpoint: 767,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1.5,
+          initialSlide: 2,
+          centerMode: true,
+          centerPadding: "25%",
+        },
+      },
+      {
+        breakpoint: 499,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          centerMode: true,
+          centerPadding: "25%",
+        },
+      },
+    ],
+  };
   const pic = (title) => {
     switch (title) {
       case "Starters and sides":
@@ -112,7 +150,24 @@ const MobileSlick = (props) => {
         </div>
         <h1 className="uppercase text-red"> {props.title}</h1>
       </div>
-      <div className="slideWrapper md:flex md:px-8 lg:px-20 py-8">
+      <div className="slideWrapper relative md:flex md:px-8 lg:px-20 py-8">
+        <button
+          onClick={() => gotoNext()}
+          className=" md:hidden absolute right-2 z-10 top-1/4"
+        >
+          <div className=" w-8 lg:w-12 ">
+            <img src={props.bottomPic === "hidden" ? btnRed : btn} alt="next" />
+          </div>
+        </button>
+
+        <button
+          onClick={() => gotoPrev()}
+          className=" md:hidden absolute left-2 z-10 top-1/4"
+        >
+          <div className=" w-8 lg:w-12 ">
+            <img src={props.bottomPic === "hidden" ? btnRed_prev : btnPrev} alt="next" />
+          </div>
+        </button>
         {props.layout === 1 && (
           <div className="navSlide hidden md:block md:w-1/3 mx-auto ">
             <Slider
@@ -140,7 +195,7 @@ const MobileSlick = (props) => {
             </div>
             <div className="md:flex w-full xl:pt-1/20">
               <div
-                className={`textSlide hidden md:block w-3/4 xl:w-1/2 mx-auto pt-8 xl:pt-14 ${props.paddingText}`}
+                className={`textSlide hidden md:block w-3/5 xl:w-1/2 mx-auto pt-8 xl:pt-14 ${props.paddingText}`}
               >
                 <Slider
                   {...settings3}
@@ -164,7 +219,9 @@ const MobileSlick = (props) => {
                   </div>
                 </button>
                 {props.bottomPic !== "hidden" && (
-                  <div className=" w-3/4 mx-auto p-3 md:w-full md:px-0 md:absolute //bottom-1/10 xl:bottom-0">
+                  <div
+                    className={` ${props.picW} mx-auto //p-3  //md:px-0  //xl:bottom-0`}
+                  >
                     <img src={pic(props.title)} alt="chopstick3" />
                   </div>
                 )}
@@ -183,7 +240,7 @@ const MobileSlick = (props) => {
               {props.children}
             </Slider>
             <div className="picAndButtton md:flex md:absolute md:w-2/3 bottom-0 right-0 md:mr-2">
-              <div className=" w-1/4 mx-auto p-3 ">
+              <div className={` w-1/2 ${props.picW} mx-auto /pt-8 `}>
                 <img src={pic(props.title)} alt="chopstick3" />
               </div>
               <button onClick={() => gotoNext()} className="hidden md:block">
@@ -196,13 +253,13 @@ const MobileSlick = (props) => {
         )}
 
         {props.layout === 3 && (
-          <div className="layout3Slide w-3/4 md:w-full mx-auto pt-8  ">
+          <div className="layout3Slide w-full md:w-full mx-auto pt-8  ">
             <div className="  md:flex md:mx-10">
               <Slider
-                {...settings}
+                {...settings4}
                 ref={customeSlider}
                 asNavFor={nav1}
-                className={` w-full px-1/10`}
+                className={` w-full md:px-1/10`}
               >
                 {props.children}
               </Slider>
@@ -212,7 +269,6 @@ const MobileSlick = (props) => {
                 </div>
               </button>
             </div>
-          
           </div>
         )}
       </div>

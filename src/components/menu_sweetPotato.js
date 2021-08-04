@@ -5,7 +5,7 @@ import MMenuItem from "./menuItem";
 const SweetPotato = (props) => {
   return (
     
-      <MobileSlick title="Loaded sweet potato fries" bg="bg-pink" layout ={2} slideNr={3}>
+      <MobileSlick title="Loaded sweet potato fries" bg="bg-pink" layout ={2} slideNr={3} picW="md:w-1/4">
         <MMenuItem
           pic="LoadedFriesAsianCresian"
           name="Loaded Fries – Asian Creasian"
