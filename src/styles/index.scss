@@ -109,6 +109,9 @@ img{
     }
 
     .navSlide {
+      .nameS{
+        display: none !important;
+      }
       .slick-slider {
         .pic {
           border-color: #ffff;
@@ -119,6 +122,7 @@ img{
             display: block;
           }
         }
+        
       }
     }
     .textSlide {
@@ -178,8 +182,8 @@ img{
     }
 
     .layout3Slide {
-      .mMenuItem{
-      //  width: 200%;
+      .nameS{
+        display: none !important;
       }
       .slick-list{
         overflow: visible;
@@ -243,10 +247,19 @@ img{
   .description{
     line-height: 2 !important;
   }
+
 }
 
+.slick-current {
+  .nameS{
+    display: none !important;
+  }
+}
 .leading1{
   line-height: 1 !important;
 
 }
 
+.spin {
+  animation: spin 10s linear infinite forwards;
+}

@@ -724,10 +724,13 @@ const MenuItem = (props) => {
 
   return (
     <div className="mMenuItem  px-1 md:px-2 xl:px-3 ">
-      <div className={` w-full pic menu-pic border-8 border-solid `}>
+      <div className={` relative w-full pic menu-pic border-8 border-solid `}>
         <Img className="w-full picS hidden md:block" fluid={pic(props.pic)} />
         <Img className="w-full picS md:hidden" fluid={picM(props.pic)} />
         <Img className="w-full picL hidden " fluid={picNav(props.pic)} />
+        <h1 className=" nameS absolute bottom-0 w-full text-center uppercase text-white font-bold tracking-wider mb-2 ">
+          {props.name}
+        </h1>
       </div>
       <div className="text text-center md:text-left  ">
         <h1 className="   name uppercase text-white font-bold tracking-wider text-3xl lg:text-4xl xl:text-5xl py-4 md:hidden  ">

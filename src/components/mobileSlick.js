@@ -154,7 +154,7 @@ const MobileSlick = (props) => {
               <div className="picAndArrow relative //md:flex flex-col align-items: flex-end justify-end pt-8 w-full md:mr-2">
                 <button
                   onClick={() => gotoNext()}
-                  className="hidden md:block absolute right-0 z-50"
+                  className="hidden md:block absolute right-0 z-10"
                 >
                   <div className=" w-8 lg:w-12 ">
                     <img
