@@ -519,6 +519,54 @@ const MenuItem = (props) => {
           }
         }
       }
+
+      DumplingsFriendsM: file(relativePath: { eq: "mMenuPic_DumplingsFriends.png" }) {
+        childImageSharp {
+          fluid(quality: 100, maxWidth: 700) {
+            ...GatsbyImageSharpFluid_withWebp
+          }
+        }
+      }
+
+      DumplingsFriendsL: file(relativePath: { eq: "MenuPic_DumplingsFriends_L.png" }) {
+        childImageSharp {
+          fluid(quality: 100, maxWidth: 700) {
+            ...GatsbyImageSharpFluid_withWebp
+          }
+        }
+      }
+
+      DumplingsFriends: file(relativePath: { eq: "MenuPic_DumplingsFriends_S.png" }) {
+        childImageSharp {
+          fluid(quality: 100, maxWidth: 700) {
+            ...GatsbyImageSharpFluid_withWebp
+          }
+        }
+      }
+
+      TryThemAllM: file(relativePath: { eq: "mMenuPic_TryThemAll.png" }) {
+        childImageSharp {
+          fluid(quality: 100, maxWidth: 700) {
+            ...GatsbyImageSharpFluid_withWebp
+          }
+        }
+      }
+
+      TryThemAllL: file(relativePath: { eq: "MenuPic_TryThemAll_L.png" }) {
+        childImageSharp {
+          fluid(quality: 100, maxWidth: 700) {
+            ...GatsbyImageSharpFluid_withWebp
+          }
+        }
+      }
+
+      TryThemAll: file(relativePath: { eq: "MenuPic_TryThemAll_S.png" }) {
+        childImageSharp {
+          fluid(quality: 100, maxWidth: 700) {
+            ...GatsbyImageSharpFluid_withWebp
+          }
+        }
+      }
     }
   `);
 
@@ -571,11 +619,10 @@ const MenuItem = (props) => {
         return data.TastyTeriyakiDip.childImageSharp.fluid;
       case "AsianCreasianDip":
         return data.AsianCreasianDip.childImageSharp.fluid;
-
-      // case "Shrimpyoza":
-      // return data.Shrimpyoza.childImageSharp.fluid;
-      // case "Shrimpyoza":
-      // return data.Shrimpyoza.childImageSharp.fluid;
+      case "DumplingsFriends":
+      return data.DumplingsFriends.childImageSharp.fluid;
+      case "TryThemAll":
+      return data.TryThemAll.childImageSharp.fluid;
 
       default:
         return data.MeSoHappy.childImageSharp.fluid;
@@ -629,6 +676,10 @@ const MenuItem = (props) => {
         return data.TastyTeriyakiDipM.childImageSharp.fluid;
       case "AsianCreasianDip":
         return data.AsianCreasianDipM.childImageSharp.fluid;
+        case "DumplingsFriends":
+          return data.DumplingsFriendsM.childImageSharp.fluid;
+          case "TryThemAll":
+            return data.TryThemAllM.childImageSharp.fluid;
       default:
         return data.MeSoHappy.childImageSharp.fluid;
     }
@@ -681,6 +732,10 @@ const MenuItem = (props) => {
         return data.TastyTeriyakiDip.childImageSharp.fluid;
       case "AsianCreasianDip":
         return data.AsianCreasianDip.childImageSharp.fluid;
+        case "DumplingsFriends":
+          return data.DumplingsFriends.childImageSharp.fluid;
+          case "TryThemAll":
+            return data.TryThemAll.childImageSharp.fluid;
       default:
         return data.MeSoHappyL.childImageSharp.fluid;
     }
