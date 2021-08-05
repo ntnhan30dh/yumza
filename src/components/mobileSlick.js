@@ -153,7 +153,7 @@ const MobileSlick = (props) => {
       <div className="slideWrapper relative md:flex md:px-8 lg:px-20 py-8">
         <button
           onClick={() => gotoNext()}
-          className=" md:hidden absolute right-2 z-10 top-1/4"
+          className={`md:hidden absolute right-2 z-10 //top-1/4 ${props.btnTop}`}
         >
           <div className=" w-8 lg:w-12 ">
             <img src={props.bottomPic === "hidden" ? btnRed : btn} alt="next" />
@@ -162,7 +162,7 @@ const MobileSlick = (props) => {
 
         <button
           onClick={() => gotoPrev()}
-          className=" md:hidden absolute left-2 z-10 top-1/4"
+          className={`md:hidden absolute left-2 z-10 /top-1/4 ${props.btnTop}`}
         >
           <div className=" w-8 lg:w-12 ">
             <img src={props.bottomPic === "hidden" ? btnRed_prev : btnPrev} alt="next" />

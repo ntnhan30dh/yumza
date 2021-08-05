@@ -16,14 +16,14 @@ const Menu = () => {
         <div className=" md:w-1/2  pr-4 ">
           <img src={menu_text} alt="menu" />
         </div>{" "}
-        <div className="text flex w-3/4 md:w-2/3 lg:w-1/2 pl-4 pt-4 md:pt-0 md:pr-8 //mb-1/10">
+        <div className="text flex w-full sm:w-10/12 lg:w-1/2 pl-4 pt-4 md:pt-0 md:pr-8 //mb-1/10">
           <p className="barlow text-white text-xs xxsm:text-base md:text-lg lg:text-2xl">
             Experience an Asian fusion like no other when you order from Yumza -
             dumplings stuffed & topped for you, delivered to you, whatever your
             mood. Yum!
           </p>
       <div className="relative  ">
-        <div className="absolute circleDiv relative w-28 h-28 md:w-44 md:h-44 xl:w-48 xl:h-48 top-10 -left-6"  >
+        <div className="absolute circleDiv relative w-28 h-28 lg:w-44 lg:h-44 xl:w-48 xl:h-48 lg:top-10 lg:-left-6"  >
             {" "}
             <div className={`absolute w-full h-full spin  `}>
               <img src={circle_red }  alt="circle_red}" />

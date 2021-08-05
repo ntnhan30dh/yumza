@@ -29,7 +29,7 @@ const MenuDips = () => {
         className="bgContainer "
       >
        
-      <MobileSlick title="Dip sauces" bg="" layout = {3}  slideNr={5}>
+      <MobileSlick title="Dip sauces" bg="" layout = {3}  slideNr={5} btnTop="top-1/3">
         <MMenuItem
           pic="GingerNinjaDip"
           name="Ginger Ninja Dip" 
