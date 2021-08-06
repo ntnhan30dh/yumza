@@ -1,7 +1,7 @@
 import React, { useState }   from "react"
 import "../styles/index.scss"
 import '../styles/global.css';
-import { useStaticQuery, graphql } from "gatsby"
+// import { useStaticQuery, graphql } from "gatsby"
 import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
 
@@ -27,23 +27,24 @@ const IndexPage = () => {
 		setmenuActive(!menuActive)
     }
 
-  const data = useStaticQuery(graphql`
-    {
-      pic: file(relativePath: { eq: "icon.png" }) {
-        childImageSharp {
-          fluid(quality: 90, maxWidth: 700) {
-            ...GatsbyImageSharpFluid_withWebp
-          }
-        }
-      }
-    }
-  `)
+  // const data = useStaticQuery(graphql`
+  //   {
+  //     pic: file(relativePath: { eq: "icon.png" }) {
+  //       childImageSharp {
+  //         fluid(quality: 90, maxWidth: 700) {
+  //           ...GatsbyImageSharpFluid_withWebp
+  //         }
+  //       }
+  //     }
+  //   }
+  // `)
   return (
     <div className="pageWrapper">
     <Header toggleMenu={toggleMenu} menuState={menuActive}/>
     <Story/>
     <Menu/>
     <Review/>
+    <div id="followus"></div>
     <Contact/>
 
     {/* <h1 className="text-red mx-10" style={codeStyles}>Hi</h1> */}

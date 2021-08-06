@@ -733,9 +733,9 @@ const MenuItem = (props) => {
       case "AsianCreasianDip":
         return data.AsianCreasianDip.childImageSharp.fluid;
         case "DumplingsFriends":
-          return data.DumplingsFriends.childImageSharp.fluid;
+          return data.DumplingsFriendsL.childImageSharp.fluid;
           case "TryThemAll":
-            return data.TryThemAll.childImageSharp.fluid;
+            return data.TryThemAllL.childImageSharp.fluid;
       default:
         return data.MeSoHappyL.childImageSharp.fluid;
     }

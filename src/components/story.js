@@ -4,10 +4,10 @@ import { useStaticQuery, graphql } from "gatsby";
 import Img from "gatsby-image";
 import { Link } from "gatsby";
 
-import dunmpling1 from "../images/dumpling1.png";
-import dunmpling2 from "../images/dumpling2.png";
-import dunmpling3 from "../images/dumpling3.png";
-import dunmplingDish from "../images/dumplingDish.png";
+// import dunmpling1 from "../images/dumpling1.png";
+// import dunmpling2 from "../images/dumpling2.png";
+// import dunmpling3 from "../images/dumpling3.png";
+// import dunmplingDish from "../images/dumplingDish.png";
 import dumpslingFall from "../images/dumplingsFall.gif";
 import chopstick1 from "../images/chopstick1.png";
 import chopstick2 from "../images/chopstick2.png";
@@ -52,7 +52,7 @@ const Story = () => {
     width: "100%",
   };
 
-  const dumpling = "sm:my-4 lg:my-8"
+  // const dumpling = "sm:my-4 lg:my-8"
   return (
     <section className="story bg-red relative " id="story">
       <div className=" absolute hidden md:block right-0 w-1/5 top-1/6 ">
@@ -117,7 +117,7 @@ const Story = () => {
             </div>
           </div>
         </div>
-        <div className="yumZaText max-w-max mx-auto transform -rotate-18 md:rotate-18 pb-16 -mt-10 xxsm:mt-0 xsm:-mt-20 md:mt-1/5 md:-mr-24 lg:-mr-40 xl:-mr-52 ">
+        <div   className="yumZaText max-w-max mx-auto transform -rotate-18 md:rotate-18 pb-16 -mt-10 xxsm:mt-0 xsm:-mt-20 md:mt-1/5 md:-mr-24 lg:-mr-40 xl:-mr-52 ">
           <h1 className="text-pink font-bold text-14vw md:text-7xl lg:text-8xl xl:text-9xl leading-100">
             YUM <br /> YUM <br /> YUMZAAAA
           </h1>

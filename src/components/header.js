@@ -36,7 +36,7 @@ const Header = (props) => {
             <span className={span}>follow Us</span>
           </Link>
 
-          <Link onClick={props.toggleMenu} to="/#contact" className={link} >
+          <Link onClick={props.toggleMenu} to="/#followus" className={link} >
             <span className={span}>Contact</span>
           </Link>
 
