@@ -23,7 +23,7 @@ const Menu = () => {
             mood. Yum!
           </p>
       <div className="relative  ">
-        <div className="absolute circleDiv relative w-28 h-28 lg:w-44 lg:h-44 xl:w-48 xl:h-48 lg:top-10 lg:-left-6"  >
+        <div className="absolute circleDiv relative w-28 h-28 lg:w-44 lg:h-44 xl:w-48 xl:h-48 lg:top-10 lg:left-2"  >
             {" "}
             <div className={`absolute w-full h-full spin  `}>
               <img src={circle_red }  alt="circle_red}" />

@@ -9,8 +9,8 @@ const Contact = () => {
         letterSpacing: "0.14em"
     }
   return (
-    <section className="contact //mt-20 py-8 bg-white " id="contact" >
-      <div className="icons w-full flex justify-center my-4">
+    <section className="contact  sm: py-8 bg-white " id="contact" >
+      <div className="icons w-full flex justify-center sm:my-4">
       <Link to="/" className=" w-10 mx-1" >
             <img src={fb} alt="fb" />
           </Link>
@@ -18,7 +18,7 @@ const Contact = () => {
             <img src={ig} alt="ig" />
           </Link>
       </div>
-      <ul className="w-full text-center">
+      <ul className="w-full text-center my-4 sm:my-0">
         <li>
           {" "}
           <Link to="/imprint" className={li} style={liStyle}>

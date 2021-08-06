@@ -88,7 +88,7 @@ const Review = () => {
           </p>
         </div>
 
-        <div className=" absolute -right-4 top-1/2 sm:top-1/5 yumZaText max-w-max mx-auto transform -rotate-18  ">
+        <div className=" absolute -right-4 top-8/12 sm:top-1/5 yumZaText max-w-max mx-auto transform -rotate-18  ">
           <h1 className="text-pink font-bold text-3xl sm:text-6xl md:text-8vw lg:text-7vw  leading1">
             YUM <br /> YUM <br /> YUMZAAAA
           </h1>

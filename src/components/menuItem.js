@@ -745,7 +745,7 @@ const MenuItem = (props) => {
     <div className="mMenuItem relative px-1 md:px-2 xl:px-3 ">   
       <div className={` relative w-full pic menu-pic border-8 border-solid `}>
       <div className=" stars hidden absolute  bottom-0 z-10 w-full h-full flex justify-center items-center">
-      <div className="w-10 xl:w-16">
+      <div className=" w-6 lg:w-10 xl:w-16">
         {" "}
         <img src={doubleStars} alt="stars" className="ml-4"/>
       </div>
@@ -753,7 +753,7 @@ const MenuItem = (props) => {
         <Img className="w-full picS hidden md:block" fluid={pic(props.pic)} />
         <Img className="w-full picS md:hidden" fluid={picM(props.pic)} />
         <Img className="w-full picL hidden " fluid={picNav(props.pic)} />
-        <h1 className=" nameS absolute bottom-0 w-full text-center uppercase text-white font-bold tracking-wider mb-2 ">
+        <h1 className=" nameS opacity-0 md:opacity-100 absolute bottom-0 w-full text-xs lg:text-base text-center uppercase text-white font-bold tracking-wider mb-2 ">
           {props.name}
         </h1>
       </div>

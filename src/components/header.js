@@ -23,7 +23,7 @@ const Header = (props) => {
           <div class="bar3"></div>
         </Link>
         </div>
-        <div className= {`rightDiv  hidden flex sm:flex flex-col justify-center items-center sm:flex-row w-screen sm:w-full h-screen sm:h-auto sm:w-max flex-wrap sm:flex-nowrap md:justify-between md:w-3/4 xsm:pt-10 sm:pt-0  ${menuActive}`}>
+        <div className= {`rightDiv  hidden flex sm:flex flex-col justify-center items-center sm:flex-row w-screen sm:w-full h-screen sm:h-auto sm:w-max flex-wrap sm:flex-nowrap md:justify-between md:w-3/4  pt-10 xxsm:pt-1/5 sm:pt-0  ${menuActive}`}>
        
           <Link onClick={props.toggleMenu} to="/#story" className={link} activeClassName="bg-black">
             <span className={span}>Our Story</span>
@@ -40,10 +40,10 @@ const Header = (props) => {
             <span className={span}>Contact</span>
           </Link>
 
-          <Link onClick={props.toggleMenu} to="/" className=" w-24  lg:w-32 sm:ml-10 /sm:-mt-4" >
+          <Link onClick={props.toggleMenu} to="/" className=" w-24  lg:w-32 sm:ml-10 py-4 xxsm:pb-1/5 sm:py-0" >
             <img src={orderNow} alt="order now" />
           </Link>
-          <div className="contactDiv sm:hidden w-full flex-grow bg-white flex flex-col justify-center items-center mt-8 ">
+          <div className="contactDiv sm:hidden w-full flex-grow bg-white flex flex-col justify-center items-center  ">
             <Contact/>
           </div>
         </div>

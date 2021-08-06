@@ -155,7 +155,7 @@ const MobileSlick = (props) => {
           onClick={() => gotoNext()}
           className={`md:hidden absolute right-2 z-10 //top-1/4 ${props.btnTop}`}
         >
-          <div className=" w-8 lg:w-12 ">
+          <div className=" w-6 xsm:w-8 lg:w-12 ">
             <img src={props.bottomPic === "hidden" ? btnRed : btn} alt="next" />
           </div>
         </button>
@@ -164,8 +164,8 @@ const MobileSlick = (props) => {
           onClick={() => gotoPrev()}
           className={`md:hidden absolute left-2 z-10 /top-1/4 ${props.btnTop}`}
         >
-          <div className=" w-8 lg:w-12 ">
-            <img src={props.bottomPic === "hidden" ? btnRed_prev : btnPrev} alt="next" />
+          <div className=" w-6 xsm:w-8 lg:w-12 ">
+            <img src={props.bottomPic === "hidden" ? btnRed_prev : btnPrev} alt="prev" />
           </div>
         </button>
         {props.layout === 1 && (
@@ -206,7 +206,7 @@ const MobileSlick = (props) => {
                   {props.children}
                 </Slider>
               </div>
-              <div className="picAndArrow relative //md:flex flex-col align-items: flex-end justify-end pt-8 w-full md:mr-2">
+              <div className="picAndArrow relative //md:flex flex-col align-items: flex-end justify-end md:pt-8 w-full md:mr-2">
                 <button
                   onClick={() => gotoNext()}
                   className="hidden md:block absolute right-0 z-10"
@@ -264,7 +264,7 @@ const MobileSlick = (props) => {
                 {props.children}
               </Slider>
               <button onClick={() => gotoNext()} className="hidden md:block">
-                <div className=" w-8 lg:w-12 -mt-20">
+                <div className=" w-8 lg:w-12 -mt-14 lg:-mt-16">
                   <img src={btn} alt="next" />
                 </div>
               </button>

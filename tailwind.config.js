@@ -4,7 +4,7 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     screens: {
-      xxsm: "400px",
+      xxsm: "375px",
       xsm: "500px",
       ...defaultTheme.screens,
     },
@@ -53,6 +53,7 @@ module.exports = {
       },
       padding: {
         '140': '140%',
+        '1/5': '20%',
         '1/10': '10%',
         '1/20': '5%',
        },
@@ -63,6 +64,7 @@ module.exports = {
         '1/5': '20%',
         '1/4': '25%',
         '1/2': '50%',
+        '8/12': '66%',
        },
        margin: {
         '-1/2': '-50%',
