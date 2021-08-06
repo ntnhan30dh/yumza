@@ -8,6 +8,7 @@ import dunmpling1 from "../images/dumpling1.png";
 import dunmpling2 from "../images/dumpling2.png";
 import dunmpling3 from "../images/dumpling3.png";
 import dunmplingDish from "../images/dumplingDish.png";
+import dumpslingFall from "../images/dumplingsFall.gif";
 import chopstick1 from "../images/chopstick1.png";
 import chopstick2 from "../images/chopstick2.png";
 import orderNow from "../images/orderNow_pink.png";
@@ -98,8 +99,9 @@ const Story = () => {
                 endless - so whether it’s dinner for two or a feast for five,
                 you always know there is something for everyone.
               </p>
-              <div className="dumplingsDiv w-1/3 ">
-                <div className={`w-16 lg:w-32 mx-auto  md:-mt-20 lg:-mt-80 ${dumpling}`}>
+              <div className="dumplingsDiv w-24 lg:w-48 md:-mt-20 lg:-mt-80 md:ml-20 ">
+              <img src={dumpslingFall} alt="dunmplingsFall" />
+                {/* <div className={`w-16 lg:w-32 mx-auto  md:-mt-20 lg:-mt-80 ${dumpling}`}>
                   <img src={dunmpling1} alt="dunmpling" />
                 </div>{" "}
                 <div className={` w-20 lg:w-40 mx-auto ${dumpling}`}>
@@ -110,12 +112,12 @@ const Story = () => {
                 </div>{" "}
                 <div className={`w-24 lg:w-48  mx-auto ${dumpling}  `}>
                   <img src={dunmplingDish} alt="dunmpling" />
-                </div>
+                </div> */}
               </div>
             </div>
           </div>
         </div>
-        <div className="yumZaText max-w-max mx-auto transform -rotate-18 md:rotate-18 pb-16 xxsm:-mt-10 md:-mr-24 lg:-mr-40 xl:-mr-52 md:mt-1/5">
+        <div className="yumZaText max-w-max mx-auto transform -rotate-18 md:rotate-18 pb-16 -mt-10 md:-mr-24 lg:-mr-40 xl:-mr-52 md:mt-1/5">
           <h1 className="text-pink font-bold text-14vw md:text-7xl lg:text-8xl xl:text-9xl leading-100">
             YUM <br /> YUM <br /> YUMZAAAA
           </h1>

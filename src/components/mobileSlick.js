@@ -1,10 +1,10 @@
 import Slider from "react-slick";
 import React, { useRef, useState } from "react";
 
-import chopstick4 from "../images/chopstick4.png";
-import handDish from "../images/handDish.png";
-import dumplingsDish from "../images/dumplingsDish.png";
-import handHeart from "../images/handHeart.png";
+import chopstick4 from "../images/chopstick4.gif";
+import handDish from "../images/handDish.gif";
+import dumplingsDish from "../images/dumplingsDish.gif";
+import handHeart from "../images/handHeart.gif";
 import star from "../images/star_red.png";
 import btn from "../images/btnNext.png";
 import btnPrev from "../images/btnPrev.png";
@@ -220,7 +220,7 @@ const MobileSlick = (props) => {
                 </button>
                 {props.bottomPic !== "hidden" && (
                   <div
-                    className={` ${props.picW} mx-auto //p-3  //md:px-0  //xl:bottom-0`}
+                    className={` ${props.picW} mx-auto`}
                   >
                     <img src={pic(props.title)} alt="chopstick3" />
                   </div>

@@ -1,6 +1,7 @@
 import React from "react";
 import { useStaticQuery, graphql } from "gatsby";
 import Img from "gatsby-image";
+import hand from '../images/hand.gif'
 
 import quote from "../images/quote.png";
 const Review = () => {
@@ -30,7 +31,8 @@ const Review = () => {
       <div className="opacity-0">hi</div>
       <div className="top  w-full sm:flex flex-row-reverse">
         <div className="w-3/4 xsm:w-2/3 sm:w-1/3 -mt-1/3  xsm:-mt-1/4 sm:-mt-1/6 mx-auto ">
-          <Img className="  " fluid={data.hand.childImageSharp.fluid} />
+          {/* <Img className="  " fluid={data.hand.childImageSharp.fluid} /> */}
+          <img src={hand} alt="hand" />
         </div>
         <div className="px-4 w-full sm:w-2/3  pr-1/10 sm:mt-6">
           <Img
