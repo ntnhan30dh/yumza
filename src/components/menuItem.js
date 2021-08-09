@@ -754,12 +754,20 @@ const MenuItem = (props) => {
         <Img className="w-full picS md:hidden" fluid={picM(props.pic)} />
         <Img className="w-full picL hidden " fluid={picNav(props.pic)} />
         <h1 className=" nameS opacity-0 md:opacity-100 absolute bottom-0 w-full text-xs lg:text-base text-center uppercase text-white font-bold tracking-wider mb-2 ">
-          {props.name}
+        {props.name.split("*").map(str => (
+            <span >
+              {str} 
+            </span>
+          ))}
         </h1>
       </div>
       <div className="text text-center md:text-left  ">
-        <h1 className="   name uppercase text-white font-bold tracking-wider text-3xl lg:text-4xl xl:text-5xl py-4 md:hidden  ">
-          {props.name}
+        <h1 className="   name uppercase text-white font-bold tracking-wider text-3xl lg:text-4xl 2xl:text-5xl py-4 md:hidden  ">
+        {props.name.split("*").map(str => (
+            <span>
+              {str} <br />{" "}
+            </span>
+          ))}
         </h1>
         <p className=" description md:hidden barlow font-bold text-xs md:text-1vw  //lg:text-base //xl:text-lg text-white ">
           {props.description}

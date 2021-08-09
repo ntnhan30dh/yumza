@@ -23,7 +23,7 @@ const Header = (props) => {
           <div class="bar3"></div>
         </Link>
         </div>
-        <div className= {`rightDiv  hidden flex sm:flex flex-col justify-center items-center sm:flex-row w-screen sm:w-full h-screen sm:h-auto sm:w-max flex-wrap sm:flex-nowrap md:justify-between md:w-3/4  pt-10 xxsm:pt-1/5 sm:pt-0  ${menuActive}`}>
+        <div className= {`rightDiv  hidden flex sm:flex flex-col justify-center items-center sm:flex-row w-screen sm:w-full h-screen sm:h-auto sm:w-max flex-wrap sm:flex-nowrap md:justify-between md:w-3/4  pt-10 xxsm:pt-1/5 xsm:pt-1/10 sm:pt-0  ${menuActive}`}>
        
           <Link onClick={props.toggleMenu} to="/#story" className={link} activeClassName="bg-black">
             <span className={span}>Our Story</span>
