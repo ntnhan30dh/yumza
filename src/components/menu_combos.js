@@ -5,7 +5,7 @@ import MMenuItem from "./menuItem";
 const Combos = () => {
   
   return (
-      <MobileSlick title="COMBOS" bg="bg-white" layout = {2}  slideNr={3} bottomPic="hidden" btnTop="top-1/4">
+      <MobileSlick title="COMBOS" bg="bg-white" layout = {2}  slideNr={3} bottomPic="hidden" btnTop="top-1/3">
         <MMenuItem  pic="DumplingsFriends" name="Dumplings & Friends" description="Your perfect menu - pick your favourite gyoza, loaded fries and drink."/>
         <MMenuItem
           pic="TryThemAll"

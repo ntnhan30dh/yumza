@@ -245,7 +245,7 @@ const MobileSlick = (props) => {
               {props.bottomPic !== "hidden" && (<img src={pic(props.title)} alt="chopstick3" /> )}
               </div>
                
-              <button onClick={() => gotoNext()} className="hidden md:block">
+              <button onClick={() => gotoNext()} className="hidden md:block z-10">
                 <div className=" w-8 lg:w-12">
                   <img src={props.bottomPic === "hidden" ? btnRed : btn} alt="next" />
                 </div>
