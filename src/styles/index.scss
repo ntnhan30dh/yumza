@@ -231,11 +231,17 @@ img{
       color: #d71d24 !important;
     }
   }
-  .navSlide {
+  .layout2Slide {
     .slick-slider {
       .pic {
         border-color: #d71d24;
       }
+    }
+    .slick-current {   
+      .pic {
+        border-color: #FF8CF0;
+      }
+
     }
   }
 }

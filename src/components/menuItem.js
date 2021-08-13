@@ -536,7 +536,7 @@ const MenuItem = (props) => {
         }
       }
 
-      DumplingsFriends: file(relativePath: { eq: "MenuPic_DumplingsFriends_S.png" }) {
+      DumplingsFriends: file(relativePath: { eq: "MenuPic_DumplingsFriends.png" }) {
         childImageSharp {
           fluid(quality: 100, maxWidth: 700) {
             ...GatsbyImageSharpFluid_withWebp
@@ -560,7 +560,24 @@ const MenuItem = (props) => {
         }
       }
 
-      TryThemAll: file(relativePath: { eq: "MenuPic_TryThemAll_S.png" }) {
+      TryThemAll: file(relativePath: { eq: "MenuPic_TryThemAll.png" }) {
+        childImageSharp {
+          fluid(quality: 100, maxWidth: 700) {
+            ...GatsbyImageSharpFluid_withWebp
+          }
+        }
+      }
+
+      YumzaHousePartyM: file(relativePath: { eq: "mMenuPic_YumzaHouseParty.png" }) {
+        childImageSharp {
+          fluid(quality: 100, maxWidth: 700) {
+            ...GatsbyImageSharpFluid_withWebp
+          }
+        }
+      }
+
+
+      YumzaHouseParty: file(relativePath: { eq: "MenuPic_YumzaHouseParty.png" }) {
         childImageSharp {
           fluid(quality: 100, maxWidth: 700) {
             ...GatsbyImageSharpFluid_withWebp
@@ -623,6 +640,8 @@ const MenuItem = (props) => {
       return data.DumplingsFriends.childImageSharp.fluid;
       case "TryThemAll":
       return data.TryThemAll.childImageSharp.fluid;
+      case "YumzaHouseParty":
+      return data.YumzaHouseParty.childImageSharp.fluid;
 
       default:
         return data.MeSoHappy.childImageSharp.fluid;
@@ -680,6 +699,8 @@ const MenuItem = (props) => {
           return data.DumplingsFriendsM.childImageSharp.fluid;
           case "TryThemAll":
             return data.TryThemAllM.childImageSharp.fluid;
+            case "YumzaHouseParty":
+              return data.YumzaHousePartyM.childImageSharp.fluid;
       default:
         return data.MeSoHappy.childImageSharp.fluid;
     }

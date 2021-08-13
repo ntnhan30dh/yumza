@@ -99,7 +99,7 @@ const Story = () => {
                 endless - so whether it’s dinner for two or a feast for five,
                 you always know there is something for everyone.
               </p>
-              <div className="dumplingsDiv w-24 lg:w-48 md:-mt-20 lg:-mt-80 md:ml-20 lg:ml-28">
+              <div className="dumplingsDiv w-28 xsm:w-32 sm:w-36 md:w-48 lg:w-52 xl:w-60 md:-mt-20 lg:-mt-60 md:ml-20 lg:ml-28">
               <img src={dumpslingFall} alt="dunmplingsFall" />
                 {/* <div className={`w-16 lg:w-32 mx-auto  md:-mt-20 lg:-mt-80 ${dumpling}`}>
                   <img src={dunmpling1} alt="dunmpling" />

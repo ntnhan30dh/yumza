@@ -240,12 +240,14 @@ const MobileSlick = (props) => {
               {props.children}
             </Slider>
             <div className="picAndButtton md:flex md:absolute md:w-2/3 bottom-0 right-0 md:mr-2">
+            
               <div className={` w-1/2 ${props.picW} mx-auto /pt-8 `}>
-                <img src={pic(props.title)} alt="chopstick3" />
+              {props.bottomPic !== "hidden" && (<img src={pic(props.title)} alt="chopstick3" /> )}
               </div>
+               
               <button onClick={() => gotoNext()} className="hidden md:block">
                 <div className=" w-8 lg:w-12">
-                  <img src={btn} alt="next" />
+                  <img src={props.bottomPic === "hidden" ? btnRed : btn} alt="next" />
                 </div>
               </button>
             </div>

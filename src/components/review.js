@@ -27,7 +27,7 @@ const Review = () => {
   const text = "text-white  text-sm my-6";
   const quoteStyle = " w-8 md:w-14 flex-shrink-0 mx-2	mt-1";
   return (
-    <section className="reviewDiv bg-red relative  w-full px-1 md:px-8 lg:px-20 ">
+    <section className="reviewDiv bg-red relative  w-full px-1 md:px-8 lg:px-20 lg:mt-28 ">
       <div className="opacity-0">hi</div>
       <div className="top  w-full sm:flex flex-row-reverse">
         <div className="w-3/4 xsm:w-2/3 sm:w-1/3 -mt-1/3  xsm:-mt-1/4 sm:-mt-1/6 mx-auto ">
