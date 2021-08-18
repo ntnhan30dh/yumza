@@ -764,7 +764,7 @@ const MenuItem = (props) => {
 
   return (
     <div className="mMenuItem relative px-1 md:px-2 xl:px-3 ">   
-      <div className={` relative w-full pic menu-pic border-8 border-solid `}>
+      <div className={` relative w-full pic menu-pic border-4 border-solid `}>
       <div className=" stars hidden absolute  bottom-0 z-10 w-full h-full flex justify-center items-center">
       <div className=" w-6 lg:w-10 /xl:w-16">
         {" "}
