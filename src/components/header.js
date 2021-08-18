@@ -1,6 +1,6 @@
 import React from "react"
 import logo from "../images/icon.png"
-import orderNow from "../images/orderNow_pink.png"
+import OrderNow from "./ordernow"
 import { Link } from "gatsby"
 import Contact from './contact'
 
@@ -40,9 +40,10 @@ const Header = (props) => {
             <span className={span}>Contact</span>
           </Link>
 
-          <Link onClick={props.toggleMenu} to="/" className=" w-24  lg:w-32 sm:ml-10 py-4 xxsm:pb-1/5 sm:py-0" >
+          {/* <Link onClick={props.toggleMenu} to="/" className=" w-24  lg:w-32 sm:ml-10 py-4 xxsm:pb-1/5 sm:py-0" >
             <img src={orderNow} alt="order now" />
-          </Link>
+          </Link> */}
+          <OrderNow toggleMenu={props.toggleMenu}/>
           <div className="contactDiv sm:hidden w-full flex-grow bg-white flex flex-col justify-center items-center  ">
             <Contact/>
           </div>

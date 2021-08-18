@@ -115,6 +115,7 @@ img{
       .slick-slider {
         .pic {
           border-color: #ffff;
+          border-width: 12px;
           .picS {
             display: none;
           }
@@ -149,6 +150,7 @@ img{
       .slick-current {
         .pic {
           border-color: #ffff;
+          border-width: 12px;
         }
         .name {
           opacity: 1 !important;
@@ -240,6 +242,7 @@ img{
     .slick-current {   
       .pic {
         border-color: #FF8CF0;
+        border-width: 12px;
       }
 
     }
@@ -296,4 +299,8 @@ img{
       border: none;
     }
   }
+}
+
+.ui.button{
+background:transparent !important;
 }
