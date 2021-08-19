@@ -7,9 +7,10 @@ import MenuFriedDumplings from "./menu_friedDumplings";
 import SweetPotato from "./menu_sweetPotato";
 import Combos from "./menu_combos";
 import MenuDips from "./menu_dips";
-import circle_red from "../images/oderNow_bgRed.png"
+// import circle_red from "../images/oderNow_bgRed.png"
+import OrderNow from "./ordernow"
 
-const Menu = () => {
+const Menu = (props) => {
   return (
     <section className="  relative menuContainer w-full    bg-pink">
       <span id="menu" className="absolute -top-28" > </span>
@@ -24,7 +25,7 @@ const Menu = () => {
             mood. Yum!
           </p>
       <div className="relative  ">
-        <div className="absolute circleDiv relative w-28 h-28 lg:w-44 lg:h-44 xl:w-48 xl:h-48 lg:top-10 lg:left-2"  >
+        {/* <div className="absolute circleDiv relative w-28 h-28 lg:w-44 lg:h-44 xl:w-48 xl:h-48 lg:top-10 lg:left-2"  >
             {" "}
             <div className={`absolute w-full h-full spin  `}>
               <img src={circle_red }  alt="circle_red}" />
@@ -33,7 +34,8 @@ const Menu = () => {
               {" "}
               <span className={`text-center uppercase px-4 text-xxs md:text-base lg:text-3xl md:px-8 lg:px-4 xl:px-8 font-bold text-white `}> order <br /> now</span>
             </div>
-          </div>
+          </div> */}
+          <OrderNow toggleMenu={props.toggleMenu} color="red"/>
       </div>
         </div>
       </div>

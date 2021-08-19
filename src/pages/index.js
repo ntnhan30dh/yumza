@@ -43,7 +43,7 @@ const IndexPage = () => {
     <div className="pageWrapper">
     <Header toggleMenu={toggleMenu} menuState={menuActive}/>
     <Story/>
-    <Menu/>
+    <Menu toggleMenu={toggleMenu}/>
     <Review/>
     <div id="followus"></div>
     <Contact/>
