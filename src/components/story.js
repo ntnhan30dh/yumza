@@ -2,7 +2,7 @@ import React from "react";
 import BackgroundImage from "gatsby-background-image";
 import { useStaticQuery, graphql } from "gatsby";
 import Img from "gatsby-image";
-import { Link } from "gatsby";
+// import { Link } from "gatsby";
 
 // import dunmpling1 from "../images/dumpling1.png";
 // import dunmpling2 from "../images/dumpling2.png";
@@ -11,9 +11,10 @@ import { Link } from "gatsby";
 import dumpslingFall from "../images/dumplingsFall.gif";
 import chopstick1 from "../images/chopstick1.png";
 import chopstick2 from "../images/chopstick2.png";
-import orderNow from "../images/orderNow_pink.png";
+// import orderNow from "../images/orderNow_pink.png";
+import OrderNow from "./ordernow"
 
-const Story = () => {
+const Story = (props) => {
   const data = useStaticQuery(graphql`
     {
       bgBig: file(relativePath: { eq: "story_bg.png" }) {
@@ -74,10 +75,11 @@ const Story = () => {
         opacity={0.5}
         className="bgContainer relative sm:hidden h-wFull xl:h-vh px-universal w-full"
       >
-        <div className="w-24 absolute right-4 bottom-4 ">
-          <Link to="/">
+        <div className="w-24 absolute right-10 bottom-4 ">
+          {/* <Link to="/">
             <img src={orderNow} alt="order now" className="w-full" />
-          </Link>
+          </Link> */}
+          <OrderNow toggleMenu={props.toggleMenu} color="pink_spin"/>
         </div>
       </BackgroundImage>
       <div className=" hidden sm:block px-universal w-full">

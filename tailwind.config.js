@@ -40,7 +40,7 @@ module.exports = {
         wFull: "100vw",
         '70vh': "70vh",
         '30vh': "30vh",
-        '32': "34vw",
+        '32vw': "34vw",
         '370': "370px",
       },
       width: {

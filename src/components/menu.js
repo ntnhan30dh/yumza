@@ -8,7 +8,7 @@ import SweetPotato from "./menu_sweetPotato";
 import Combos from "./menu_combos";
 import MenuDips from "./menu_dips";
 // import circle_red from "../images/oderNow_bgRed.png"
-import OrderNow from "./ordernow"
+// import OrderNow from "./ordernow"
 
 const Menu = (props) => {
   return (
@@ -35,7 +35,7 @@ const Menu = (props) => {
               <span className={`text-center uppercase px-4 text-xxs md:text-base lg:text-3xl md:px-8 lg:px-4 xl:px-8 font-bold text-white `}> order <br /> now</span>
             </div>
           </div> */}
-          <OrderNow toggleMenu={props.toggleMenu} color="red"/>
+          {/* <OrderNow toggleMenu={props.toggleMenu} color="red"/> */}
       </div>
         </div>
       </div>

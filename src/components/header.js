@@ -43,7 +43,7 @@ const Header = (props) => {
           {/* <Link onClick={props.toggleMenu} to="/" className=" w-24  lg:w-32 sm:ml-10 py-4 xxsm:pb-1/5 sm:py-0" >
             <img src={orderNow} alt="order now" />
           </Link> */}
-          <OrderNow toggleMenu={props.toggleMenu} color="pink"/>
+          <OrderNow toggleMenu={props.toggleMenu} color="pink_spin"/>
           <div className="contactDiv sm:hidden w-full flex-grow bg-white flex flex-col justify-center items-center  ">
             <Contact/>
           </div>
