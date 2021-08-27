@@ -18,7 +18,7 @@ export default function Home() {
       <title>Gatsu Gatsu</title>
       </head>
     <Header toggleMenu={toggleMenu} menuState={menuActive}/>
-    <div className="legalInfo-div">
+    <div className="legalInfo-div p-1/10">
         <h1>Imprint</h1>
         <h2>Editorial Responsibility</h2>
         <p>
@@ -46,7 +46,7 @@ export default function Home() {
         <h3>Contact</h3>
         <p>
           Phone: +49 (30) 54 44 59 000 <br />
-          Email: hello@itacate.com
+          Email: hello@yumzadumplings.com
         </p>
         <p>
           Registergericht/district court: Amtsgericht Berlin-Charlottenburg /

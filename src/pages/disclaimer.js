@@ -18,7 +18,7 @@ export default function Home() {
       <title>Gatsu Gatsu</title>
       </head>
     <Header toggleMenu={toggleMenu} menuState={menuActive}/>
-    <div className="legalInfo-div">
+    <div className="legalInfo-div p-1/10">
         <h1>Disclaimer</h1>
         <h2>Legal notice</h2>
         <p>

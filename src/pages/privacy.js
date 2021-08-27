@@ -18,7 +18,7 @@ export default function Home() {
       <title>Gatsu Gatsu</title>
       </head>
     <Header toggleMenu={toggleMenu} menuState={menuActive}/>
-    <div className="legalInfo-div">
+    <div className="legalInfo-div p-1/10">
         <h1>Privacy Policy</h1>
 
         <h2>Privacy Notice</h2>
@@ -215,7 +215,7 @@ export default function Home() {
         </p>
         <h2>Cookie Information</h2>
         <p>
-          In order for your visit to Itacate website to be attractive and to enable
+          In order for your visit to Yumza website to be attractive and to enable
           the use of certain functions, we use the so-called cookies on various
           pages. Cookies are small text files that are stored in your browser.
           Some of the cookies we use are deleted after the end of the operation
@@ -259,8 +259,7 @@ export default function Home() {
         <p>
           If you would like to: access, correct, amend or delete any personal
           information we have about you, register a complaint, or simply want
-          more information, please fill out the contact form on the website to
-          get in touch with us.
+          more information, please contact us by email at: hello@yumzadumplings.com.
         </p>
       </div>
     <Contact />

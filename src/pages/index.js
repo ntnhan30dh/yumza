@@ -40,7 +40,7 @@ const IndexPage = () => {
   //   }
   // `)
   return (
-    <div className="pageWrapper">
+    <div className="pageWrapper overflow-hidden">
     <Header toggleMenu={toggleMenu} menuState={menuActive}/>
     <Story toggleMenu={toggleMenu}/>
     <Menu toggleMenu={toggleMenu}/>
