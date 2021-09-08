@@ -355,7 +355,7 @@ const MenuItem = (props) => {
       }
 
       LoadedFriesAsianCresianM: file(
-        relativePath: { eq: "mMenuPic_LoadedFriesAsianCresian.png" }
+        relativePath: { eq: "mMenuPic_LoadedFriesAsianCresian2.png" }
       ) {
         childImageSharp {
           fluid(quality: 100, maxWidth: 700) {
