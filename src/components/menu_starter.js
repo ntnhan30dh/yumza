@@ -8,7 +8,7 @@ const MenuStarter = () => {
       <MobileSlick title="Starters and sides" bg="bg-red" layout = {1}  slideNr={4} paddingText="pr-14" picW="w-1/2 md:w-full md:absolute bottom-0" btnTop="top-1/4">
         <MMenuItem
           pic="MeSoHappy"
-          name="ME SO HAPPY"
+          name="Miso Soup"
           description="Super healthy miso is eaten around the clock in Japan. And no wonder why: the spicy soup with tofu, nori seaweed and spring onions just always works. We'll spice it up with three gyozas of your choice - the most casual way to eat Japanese classics!"
           ingredient="Coconut-lime sauce, coriander, roasted peanuts"
         />
